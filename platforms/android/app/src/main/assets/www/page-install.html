@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>NYAPAY | Application de paiement</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-dark">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+	<div class="page-content">
+		<div data-card-height="cover-card" class="card mb-0">
+			<div class="card-center content mb-0">
+				<div class="d-flex">
+					<div>
+						<img src="images/avatars/7s.png" width="150" class="mb-4 mr-4 ">
+					</div>
+					<div class="mt-2">
+						<h1 class="font-700">Nous allons preparer le terminal</h1>
+					</div>
+				</div>
+				<fieldset>
+					<div class="form-field form-name">
+						<label class="color-white" >Numero d'utilisateur</label>
+						<input type="number" id="install-terminal-user" value="" class="rounded-s" />
+					</div>
+					<div class="row mb-0">
+						<div class="col-6">
+							<div class="form-field form-name">
+								<label class="color-white" >Numero du terminal</label>
+								<input type="text" id="install-terminal-number" value="" class="rounded-s" />
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-field form-name">
+								<label class="color-white" >Code pin du terminal</label>
+								<input type="number" id="install-terminal-pin" value="" class="rounded-s" />
+							</div>
+						</div>
+					</div>
+					<div class="form-field form-name">
+						<label class="color-white" >Url de configuration<span>(par defaut : backoffice.nyapay.fr)</span></label>
+						<input type="text" id="install-terminal-url" value="backoffice.nyapay.fr" class="rounded-s" />
+					</div>
+				</fieldset>
+				<button id="confirm-install-terminal" type="button" class="btn btn-m rounded-s btn-center-xxl text-uppercase mt-4 font-500 bg-blue-dark color-white font-16" onclick="ConfirmInstallTerminal()" >Configurer le terminal </button>
+			</div>
+			<!--<div class="card-overlay bg-black opacity-80"></div>-->
+			<div class="card-overlay bg-gradient"></div>
+		</div>			
+	</div>
+	
+    <!-- Notification -->
+	<div id="notification-error" data-delay="3000" data-autohide="true" class="notification bg-red-dark shadow-xl opacity-95 fade hide">
+        <div class="toast-body color-white p-3">
+            <span><i class="fa fa-exclamation-triangle color-white"></i></span>
+            <strong id="notification-error-text" class="color-white  font-500"></strong>
+        </div>
+    </div>	
+
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/Database.js"></script>
+<script type="text/javascript" src="scripts/SqlFunction.js"></script>
+<script type="text/javascript" src="scripts/presentation.js"></script>
+<script type="text/javascript" src="scripts/welcome.js"></script>
+<script type="text/javascript" src="scripts/install.js"></script>
+<script type="text/javascript" src="scripts/transaction-list.js"></script>
+<script type="text/javascript" src="scripts/card-list.js"></script>
+<script type="text/javascript" src="scripts/log-list.js"></script>
+<script type="text/javascript" src="scripts/pay.js"></script>
+<script type="text/javascript" src="scripts/grant.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/active.js"></script>
+<script type="text/javascript" src="scripts/synchro.js"></script>
+<script type="text/javascript" src="scripts/dashboard.js"></script>
+<script type="text/javascript" src="scripts/calculator.js"></script>
+<script type="text/javascript" src="scripts/crypto-js.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+
+</body>

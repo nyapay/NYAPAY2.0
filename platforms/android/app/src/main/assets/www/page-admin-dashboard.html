@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>NYAPAY | Application de paiement</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-dark">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+	
+	<div class="header header-fixed header-dark header-logo-app">
+        <a href="#" class="header-title">Dashboard</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+    </div>
+
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main-admin.html" data-menu-width="280" data-menu-active="nav-components" ></div>
+    
+	<div class="page-content header-clear">
+		     
+        <div class="content mb-0" >
+
+			<h1 class="color-blue-dark text-uppercase">Tableau de bord</h1>
+            <p >
+               Bienvenue, vous pourrez visualer les activités enregistrés sur ce terminal
+            </p>
+			
+			<div class="bg-transparent  scroll " data-card-height="353" style="height: 353px;">
+				<p class="color-white-dark font-700 text-uppercase">Transactions de vente</p>
+				<div class="chart-container" style="width:100%; height:300px;">
+					<canvas class="chart" id="debit-chart"/>
+				</div>
+			</div>
+			
+			<div class="bg-transparent  scroll " data-card-height="353" style="height: 353px;">
+				<p class="color-white-dark font-700 text-uppercase">Transactions de recharge</p>
+				<div class="chart-container" style="width:100%; height:300px;">
+					<canvas class="chart" id="credit-chart"/>
+				</div>
+			</div>
+			
+		</div>    
+    </div>
+	
+	<!-- Close Session-->
+	<div id="close-session" class="menu menu-box-bottom bg-transparent"  data-menu-height="682" >
+		<div class="scan-card-content">
+			<div class="card mx-3 rounded-s bg-white" data-card-height="260" style="height: 260px;">
+				<div class="card-top">
+					<a href="#" class="close-menu float-right color-black mt-2 mr-3"><i class="fas fa-times font-25"></i></a>
+				</div>
+				<h1 class="text-center mt-4"><i class="fas fa-3x fa-sign-out-alt color-black "></i></h1>
+				<h1 id="scan-card-message" class="text-center mt-3 font-700 color-black">Cloturer la session</h1>
+				<h4 id="resume-activity" class="ml-4 mr-4 color-black font-200 opacity-80"></h4> 
+
+			</div>
+		</div>
+		<a href="#" class="btn  close-menu btn-m rounded-s btn-center-xxl text-uppercase mt-4 font-500 bg-red-dark color-white font-16" onclick="ConfirmCloseSession()">Clotûrer</a>
+    </div>
+	
+    <!-- Notification -->
+	<div id="notification-error" data-delay="3000" data-autohide="true" class="notification bg-red-dark shadow-xl opacity-95 fade hide">
+        <div class="toast-body color-white p-3">
+            <span><i class="fa fa-exclamation-triangle color-white"></i></span>
+            <strong id="notification-error-text" class="color-white  font-500"></strong>
+        </div>
+    </div>	
+
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/Database.js"></script>
+<script type="text/javascript" src="scripts/SqlFunction.js"></script>
+<script type="text/javascript" src="scripts/transaction-list.js"></script>
+<script type="text/javascript" src="scripts/card-list.js"></script>
+<script type="text/javascript" src="scripts/log-list.js"></script>
+<script type="text/javascript" src="scripts/pay.js"></script>
+<script type="text/javascript" src="scripts/grant.js"></script>
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/active.js"></script>
+<script type="text/javascript" src="scripts/synchro.js"></script>
+<script type="text/javascript" src="scripts/dashboard.js"></script>
+<script type="text/javascript" src="scripts/calculator.js"></script>
+<script type="text/javascript" src="scripts/crypto-js.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+
+
+</body>

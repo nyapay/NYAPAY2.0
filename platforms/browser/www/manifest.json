@@ -1,0 +1,18 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "NYAPAY",
+  "short_name": "NYAPAY",
+  "version": "fr.nyapay",
+  "description": "Application de paiement fermé",
+  "author": "Yannick NYA",
+  "icons": [
+    {
+      "src": "www/images/icon_app/icon.png",
+      "type": "image/png",
+      "sizes": "undefinedxundefined"
+    }
+  ],
+  "start_url": "page-presentation.html",
+  "theme_color": "#00000"
+}

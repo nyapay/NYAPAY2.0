@@ -1,0 +1,367 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+ body, html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.pt-6 {
+    padding-top: 50px !important;
+}
+
+.profileBox {
+    background: #040506 !important;
+}
+
+.btn-text-dark2{
+    color: #040506 !important;
+}
+
+.text-dark2 {
+    color: #040506 !important;
+}
+
+
+.btn-dark2 {
+    background: #040506 !important;
+    border-color: #040506 !important;
+    color: #ffffff !important;
+}
+
+.btn-dark2:hover, .btn-dark2:focus, .btn-dark2:active, .btn-dark2.active {
+    background: #040506 !important;
+    border-color: #040506 !important;
+    color: #ffffff !important;
+}
+
+a.bg-dark2:focus, a.bg-dark2:hover, button.bg-dark2:focus, button.bg-dark2:hover {
+     background: #040506 !important;
+}
+
+.bg-dark2 {
+    background: #040506 !important;
+    color: #FFF;
+}
+
+.appBottomMenu .item .action-button {
+    background: #040506 !important;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: .25;
+    transform: scale(.75);
+  }
+}
+
+
+
+.big-amount
+{
+    font-size : 50px;
+}
+
+
+.btn-lg2 {
+    height: 60px;
+    padding: 3px 24px;
+    font-size: 22px;
+}
+
+.pulse-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+
+
+.pulse-bubble {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #007bff;
+}
+
+.pulse-bubble-1 {
+    animation: pulse .4s ease 0s infinite alternate;
+}
+.pulse-bubble-2 {
+    animation: pulse .4s ease .2s infinite alternate;
+}
+.pulse-bubble-3 {
+    animation: pulse .4s ease .4s infinite alternate;
+}
+.pulse-bubble-4 {
+    animation: pulse .4s ease .6s infinite alternate;
+}
+.pulse-bubble-5 {
+    animation: pulse .4s ease .8s infinite alternate;
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent;
+}
+
+.gradient-45deg-indigo-blue {
+    background: #303f9f;
+    background: linear-gradient(45deg, #303f9f, #1976D2) !important;
+}
+
+.gradient-45deg-cyan-light-green {
+    background: #0097a7;
+    background: linear-gradient(45deg, #0097a7, #b2ff59) !important;
+}
+
+.gradient-45deg-blue-grey-blue {
+    background: #263238;
+    background: linear-gradient(45deg, #263238, #2979FF) !important;
+}
+
+.gradient-45deg-orange-amber {
+    background: #e65100;
+    background: linear-gradient(45deg, #e65100, #1976D2) !important;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+.wide-block {
+    border-top: 0px solid #E1E1E1;
+    border-bottom: 0px solid #E1E1E1;
+}
+
+.nav-tabs.style1 .nav-item .nav-link.active {
+    color: #205dbb;
+}
+
+.nav-tabs.style1 {
+    background: white;
+}
+
+a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
+    background-color: #f9f9f9!important;
+}
+
+.bg-light2 {
+    background: rgb(249 249 249) !important;
+}
+
+@keyframes blinker {
+     0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*html{
+    background-color: white;
+}
+
+#appCapsule {
+    background-color: white;
+    
+}
+
+.wide-block {
+    border : none;
+}
+*/
+
+.mt-10 {
+    margin-top: 80px !important;
+}
+
+.mt-6  {  
+margin-top: 50px !important;
+}
+
+.mt-7  {  
+margin-top: 60px !important;
+}
+
+
+.row {
+    margin-right: -16px;
+    margin-left: -16px;
+}
+
+
+.btn.focus, .btn:focus, .page-link:focus, .page-link:focus {
+    -webkit-box-shadow: inherit;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+
+.table-sm td, .table-sm th {
+    padding: .2rem;
+}
+
+.calc-td {
+    padding: .60rem !important;
+}
+
+.ce{
+    font-size : 20px;
+}
+
+.pagination {
+    display: block;
+}
+.navbar {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.form-control:disabled, .form-control[readonly] {
+   background: #e6e6e600;
+
+    color: black;
+    opacity: 1;
+}
+.calc-button{
+    font-size: 22px;
+    font-weight:400;
+}
+
+.equal{
+    font-size : 30px;
+}
+
+.big-button{
+    font-size : 40px;
+    padding-bottom: 10px;
+    line-height: 0px;
+}
+
+.h1-small{
+  font-size: 25px;
+}
+
+.table td, .table th {
+    border-top: 0px solid #e7e7e7;
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #fff!important;
+}
+
+.profileBox .image-wrapper .imaged {
+    width: 42px;
+    height: 42px;
+    border: none;
+    box-shadow: none;
+}
+/*
+table.dataTable thead .sorting_asc {
+    background-image: url(../images/chevron-up.svg)!important;
+    background-size: 20px;
+}
+
+table.dataTable thead .sorting_desc {
+    background-image: url(../images/chevron-up.svg)!important;
+    background-size: 20px;
+}
+
+table.dataTable thead .sorting {
+    background-image: url(../images/chevron-up.svg)!important;
+    background-size: 20px;
+}
+*/
+
+
+.form-control:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.bg-blue{
+	background-color : #0D47A1;
+	
+}
+
+.bg-grey{
+
+background-color : #f3f3f3;
+}
+
+.bg-small-grey{
+
+background-color : #f8f9fa;
+}
+.bg-small-grey a{
+    color : #6b757c;
+}
+
+.bg-small-grey .navbar-toggler {
+    background-color : #00000008;
+}
+
+
+.dropdown-toggle
+{
+    font-size: 1.2em !important;
+    }
+
+.text-grey{
+	color: #808080;
+}
+.text-white a {
+    color: white;
+}
+
+.text-white a:focus {
+    color: white;
+}
+.info_amount
+{
+	font-size: 30px;
+	padding : 55px;	
+}
+/*.largeField { background-color : #f8f9fa; color : black; width: 100%; height: 250px; border: none ; font-size: 35px; }*/
+.largeField { background-color : transparent; width: 100%; border: none ; font-size: 35px; }
+
+
+.img-nfc { margin-top: 50px; }
+.img-nfc-scan { margin: 60px; }
+.text-nfc { color: #2c323f57;}
+
+
+.font-lg{
+	font-size: 20px;
+}
+
+.appBottomMenu {
+    background: #f9f9f9;
+    border-top: 0px solid #E1E1E1; 
+
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  padding: 15px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size)
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+} */

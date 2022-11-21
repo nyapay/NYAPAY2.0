@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Tap to Share</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+                        
+        <div class="content">
+            <img width="150" class="generate-qr-auto mx-auto polaroid-effect shadow-xl mb-4 mt-3" src="">
+            <h1 class="text-center font-20 font-700 mt-n3">Tip: Use your Mobile</h1>
+            <p class="text-center">
+                Please check this page on your mobile device in order for the sharing links to actually share the page you're on! These do not work in the demo iframe we have on ThemeForest.
+            </p>
+        </div>
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-2">
+            <h4>Social Pills & Buttons</h4>
+            <p>
+                Add social icons after any content block or element, after tapping it, the page will automatically generate the share link. 
+            </p>
+            <a href="#" class="shareToFacebook mb-3 btn btn-m bg-facebook btn-icon font-600"><i class="fab fa-facebook-f font-16"></i> Share to Facebook</a><br>
+            <a href="#" class="shareToTwitter mb-3 btn btn-m bg-twitter btn-icon font-600"><i class="fab fa-twitter font-16"></i>Share to Twitter</a><br>
+            <a href="#" class="shareToPinterest mb-3 btn btn-m bg-pinterest btn-icon font-600"><i class="fab fa-pinterest font-16"></i>Share to Pinterest</a><br>
+            <a href="#" class="shareToLinkedin mb-3 btn btn-m bg-linkedin btn-icon font-600"><i class="fab fa-linkedin-in font-16"></i>Share to Linkedin</a><br>
+            <a href="#" class="shareToWhatsApp mb-3 btn btn-m bg-whatsapp btn-icon font-600"><i class="fab fa-whatsapp font-16"></i>Share via  WhatsApp</a><br>
+            <a href="#" class="shareToMail mb-3 btn btn-m bg-blue-dark btn-icon font-600"><i class="fa fa-envelope font-16"></i>Share via Email</a><br>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content mb-2">
+            <h4>Small Icons</h4>
+            <p>
+                Add social icons after any content block or element, after tapping it, the page will automatically generate the share link.
+            </p>
+            <a href="#" class="shareToFacebook mb-3 icon icon-s bg-facebook rounded-xs text-uppercase font-900"><i class="fab fa-facebook-f font-14"></i></a>
+            <a href="#" class="shareToTwitter mb-3 icon icon-s bg-twitter rounded-xs text-uppercase font-900"><i class="fab fa-twitter font-14"></i></a>
+            <a href="#" class="shareToPinterest mb-3 icon icon-s bg-pinterest rounded-xs text-uppercase font-900"><i class="fab fa-pinterest font-14"></i></a>
+            <a href="#" class="shareToLinkedin mb-3 icon icon-s bg-linkedin rounded-xs text-uppercase font-900"><i class="fab fa-linkedin-in font-14"></i></a>
+            <a href="#" class="shareToWhatsApp mb-3 icon icon-s bg-whatsapp rounded-xs text-uppercase font-900"><i class="fab fa-whatsapp font-14"></i></a>
+            <a href="#" class="shareToMail mb-3 icon icon-s bg-blue-dark rounded-xs text-uppercase font-900"><i class="fa fa-envelope font-14"></i></a>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h4>Text Links</h4>
+            <p>
+                Any link can have the option to automatically pick up the page link and share on click.
+            </p>
+            <a href="#" class="shareToFacebook">Share To Facebook</a><br>
+            <a href="#" class="shareToTwitter">Share To Twitter</a><br>
+            <a href="#" class="shareToLinkedIn">Share To LinkedIn</a><br>
+            <a href="#" class="shareToPinterest">Share To Pinterest</a><br>
+            <a href="#" class="shareToWhatsApp">Share To WhatsApp</a><br>
+            <a href="#" class="shareToMail">Share To Mail</a>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h4>Share via Sheet or Modal</h4>
+            <p>
+                You can also share via action sheets. These are non-intrusive and provide a gorgeous
+                user experience
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" data-menu="menu-share" class="btn btn-m btn-full bg-highlight text-uppercase shadow-xl font-800">Open Sheet</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" data-menu="menu-share-modal" class="btn btn-m btn-full  bg-highlight text-uppercase shadow-xl font-800">Open Modal</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->
+        
+    <div id="menu-share-modal" 
+         class="menu menu-box-modal" 
+         data-menu-width="350"
+         data-menu-height="400">
+        <div class="menu-title">
+            <h1>Share</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        <div class="content mt-0">
+            <div class="list-group list-custom-small">
+                <a href="#">
+                    <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-l"></i>
+                    <span>Facebook</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-l"></i>
+                    <span>Twitter</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-l"></i>
+                    <span>LinkedIn</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-l"></i>
+                    <span>WhatsApp</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-l"></i>
+                    <span>Email</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#" class="close-menu border-0">
+                    <i class="fa fa-times font-12 bg-red-dark color-white shadow-l rounded-l"></i>
+                    <span>Close</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>      
+    
+    <div id="menu-share" 
+         class="menu menu-box-bottom" 
+         data-menu-height="400">
+        <div class="menu-title">
+            <h1>Share</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="divider divider-margins mt-3 mb-0"></div>
+        <div class="content mt-0">
+            <div class="list-group list-custom-small">
+                <a href="#">
+                    <i class="fab fa-facebook-f font-12 bg-facebook color-white shadow-l rounded-l"></i>
+                    <span>Facebook</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter font-12 bg-twitter color-white shadow-l rounded-l"></i>
+                    <span>Twitter</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in font-12 bg-linkedin color-white shadow-l rounded-l"></i>
+                    <span>LinkedIn</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp font-12 bg-whatsapp color-white shadow-l rounded-l"></i>
+                    <span>WhatsApp</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-envelope font-12 bg-mail color-white shadow-l rounded-l"></i>
+                    <span>Email</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+                <a href="#" class="close-menu border-0">
+                    <i class="fa fa-times font-12 bg-red-dark color-white shadow-l rounded-l"></i>
+                    <span>Close</span>
+                    <i class="fa fa-angle-right mr-2"></i>
+                </a>
+            </div>
+        </div>
+    </div>      
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

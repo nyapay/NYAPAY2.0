@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "highlight-yellow.css",
+	"sources": [
+		"../../scss/highlights/highlight-yellow.scss"
+	],
+	"sourcesContent": [
+		"/* Generating Color Pack*/\n\n$defaultGradient : linear-gradient(to bottom, #FFCE54 0%, #F6BB42 100%)!important;\n$colorHighlightLight: #FFCE54;\n$colorHighlightDark: #F6BB42;\n\n$colorPack: (\n    \"highlight\" $colorHighlightLight $colorHighlightDark, \n);\n\n.color-highlight{color:nth(nth($colorPack,1),3)!important;}\n.bg-highlight{background-color:nth(nth($colorPack,1),3)!important; color:#FFF!important;}\n.border-highlight{border-color:nth(nth($colorPack,1),3)!important;}\n.gradient-highlight{background-image:linear-gradient(to bottom, nth(nth($colorPack,1),2), nth(nth($colorPack,1),3))!important;}\n.gradient-menu{background-image:linear-gradient(130deg, #7ea5f6, #ff384c)!important;}\n\n/*Input Fields*/\n.input-style .input-style-1-active{color:$colorHighlightLight!important;}\n.input-style input:focus, .input-style textarea:focus, .input-style select:focus{border-color:$colorHighlightLight}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,0BAA0B;;AAU1B,AAAA,gBAAgB,CAAA;EAAC,KAAK,EAND,OAAO,CAMmB,UAAU;CAAG;;;AAC5D,AAAA,aAAa,CAAA;EAAC,gBAAgB,EAPT,OAAO,CAO2B,UAAU;EAAE,KAAK,EAAC,IAAI,CAAA,UAAU;CAAG;;;AAC1F,AAAA,iBAAiB,CAAA;EAAC,YAAY,EART,OAAO,CAQ2B,UAAU;CAAG;;;AACpE,AAAA,mBAAmB,CAAA;EAAC,gBAAgB,EAAC,4CAA8E,CAAA,UAAU;CAAG;;;AAChI,AAAA,cAAc,CAAA;EAAC,gBAAgB,EAAC,yCAAyC,CAAA,UAAU;CAAG;;AAEtF,gBAAgB;;AAChB,AAAA,YAAY,CAAC,qBAAqB,CAAA;EAAC,KAAK,EAdlB,OAAO,CAcgC,UAAU;CAAG;;;AAC1E,AAAA,YAAY,CAAC,KAAK,AAAA,MAAM,EAAE,YAAY,CAAC,QAAQ,AAAA,MAAM,EAAE,YAAY,CAAC,MAAM,AAAA,MAAM,CAAA;EAAC,YAAY,EAfvE,OAAO;CAeuF"
+}

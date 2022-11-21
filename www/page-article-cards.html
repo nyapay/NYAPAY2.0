@@ -1,0 +1,264 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Article Cards</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear-medium">
+
+        <a href="#" data-menu="menu-article-card-1" class="card mx-3 rounded-s bg-22" data-card-height="250">
+            <div class="card-top">
+                <span class="badge bg-blue-dark px-3 py-2 m-3 text-uppercase rounded-s">SCULPTURE</span>
+            </div>
+            <div class="card-bottom mb-4 pb-1 mx-3">
+                <h1 class="color-white font-20 font-700">Abstract Sculpture is back in Fashion</h1>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </a>
+        
+        <a href="#" data-menu="menu-article-card-2"  class="card mx-3 rounded-s bg-30" data-card-height="250">
+            <div class="card-top">
+                <span class="badge bg-orange-dark px-3 py-2 m-3 text-uppercase rounded-s">DESIGN</span>
+            </div>
+            <div class="card-bottom mb-4 pb-1 mx-3">
+                <h1 class="color-white font-20 font-700">Minimalist Design is Awesome</h1>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </a>
+
+        <a href="#" data-menu="menu-article-card-3"  class="card mx-3 rounded-s bg-6" data-card-height="250">
+            <div class="card-top">
+                <span class="badge bg-dark-dark px-3 py-2 m-3 text-uppercase rounded-s">DESIGN</span>
+            </div>
+            <div class="card-bottom mb-4 pb-1 mx-3">
+                <h1 class="color-white font-20 font-700">Wood Structures back in Fashion</h1>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p>
+            </div>
+            <div class="card-bottom">
+                <p class="color-white opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </a>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    
+    <div id="menu-article-card-1" 
+         class="menu menu-box-right" 
+         data-menu-width="100%" 
+         data-menu-effect="menu-parallax">
+        
+        <div class="card bg-22 mb-3" data-card-height="350">
+            <div class="card-top no-click"><span class="badge bg-blue-dark px-3 py-3 m-3 text-uppercase rounded-s float-right">SCULPTURE</span></div>
+            <div class="card-top"><a href="#" class="close-menu badge bg-black color-white px-3 py-3 m-3 text-uppercase rounded-s"><i class="fa fa-arrow-left pr-3"></i> Back to List</a></div>
+        </div>
+        
+        <div class="row mb-0">
+            <div class="col-6"><p class="opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p></div>
+            <div class="col-6"><p class="opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p></div>
+        </div>
+        <div class="divider opacity-70"></div>
+        
+        <div class="content">
+            <h1>Abstract Sculpture is back in Fashion</h1>
+            <p>Article cards allow you to move in menus from the left and from the right, even from the top and bottom. This allows you to create content similar to Facebook's instant article right inside your page.</p>
+            <a href="#" class="shareToFacebook mb-3 icon icon-s bg-facebook rounded-xs text-uppercase font-900"><i class="fab fa-facebook-f font-14"></i></a>
+            <a href="#" class="shareToTwitter mb-3 icon icon-s bg-twitter rounded-xs text-uppercase font-900"><i class="fab fa-twitter font-14"></i></a>
+            <a href="#" class="shareToPinterest mb-3 icon icon-s bg-pinterest rounded-xs text-uppercase font-900"><i class="fab fa-pinterest font-14"></i></a>
+            <a href="#" class="shareToLinkedin mb-3 icon icon-s bg-linkedin rounded-xs text-uppercase font-900"><i class="fab fa-linkedin-in font-14"></i></a>
+            <a href="#" class="shareToWhatsApp mb-3 icon icon-s bg-whatsapp rounded-xs text-uppercase font-900"><i class="fab fa-whatsapp font-14"></i></a>
+            <a href="#" class="shareToMail mb-3 icon icon-s bg-blue-dark rounded-xs text-uppercase font-900"><i class="fa fa-envelope font-14"></i></a>
+        
+            <div class="divider mt-3"></div>
+            
+            <h4>What content can I use here?</h4>
+            <p>You can use an content you want from our item in this area. Simple, fast and effective way to create instant articles.</p>
+            
+            <div class="row">
+                <div class="col-4"><a href="images/pictures/17.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/17s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/12.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/12s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/19.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/19s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+            </div>
+            
+            <h4>Any content. Any place.</h4>
+            <p>Instant articles support any content from our template, and it works like a charm!</p>
+            
+            <div class="divider mt-3"></div>
+            
+            <ul class="icon-list line-height-xl font-14">
+                <li><i class="fa fa-check color-green-dark"></i>Sed vulputate metus non massa sagittis euismod.</li>
+                <li><i class="fa fa-star color-yellow-dark"></i>Donec pretium est eget urna iaculis, quis iaculis libero porta.</li>
+                <li><i class="fa fa-heart color-red-dark"></i>Mauris gravida libero non est blandit, eget volutpat metus sodales.</li>
+                <li><i class="fa fa-circle color-magenta-dark"></i>Nullam dapibus ex non leo placerat, vitae eleifend lectus rhoncus.</li>
+                <li><i class="fa fa-square color-pink-light"></i>Morbi vel turpis lacinia, rhoncus metus non, dictum sapien.</li>
+            </ul> 
+
+            <div class="divider"></div>
+            
+            <a href="#" class="close-menu btn btn-m rounded-sm text-uppercase font-700 shadow-xxl btn-full bg-highlight mb-4">Close Article</a>
+        
+        </div>        
+    </div>
+
+    
+    <div id="menu-article-card-2" 
+         class="menu menu-box-right" 
+         data-menu-width="100%" 
+         data-menu-effect="menu-parallax">
+        
+        <div class="card bg-30 mb-3" data-card-height="350">
+            <div class="card-top no-click"><span class="badge bg-blue-dark px-3 py-3 m-3 text-uppercase rounded-s float-right">SCULPTURE</span></div>
+            <div class="card-top"><a href="#" class="close-menu badge bg-black color-white px-3 py-3 m-3 text-uppercase rounded-s"><i class="fa fa-arrow-left pr-3"></i> Back to List</a></div>
+        </div>
+        
+        <div class="row mb-0">
+            <div class="col-6"><p class="opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p></div>
+            <div class="col-6"><p class="opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p></div>
+        </div>
+        <div class="divider opacity-70"></div>
+        
+        <div class="content">
+            <h1>Minimalist Design is Awesome</h1>
+            <p>Article cards allow you to move in menus from the left and from the right, even from the top and bottom. This allows you to create content similar to Facebook's instant article right inside your page.</p>
+            <a href="#" class="shareToFacebook mb-3 icon icon-s bg-facebook rounded-xs text-uppercase font-900"><i class="fab fa-facebook-f font-14"></i></a>
+            <a href="#" class="shareToTwitter mb-3 icon icon-s bg-twitter rounded-xs text-uppercase font-900"><i class="fab fa-twitter font-14"></i></a>
+            <a href="#" class="shareToPinterest mb-3 icon icon-s bg-pinterest rounded-xs text-uppercase font-900"><i class="fab fa-pinterest font-14"></i></a>
+            <a href="#" class="shareToLinkedin mb-3 icon icon-s bg-linkedin rounded-xs text-uppercase font-900"><i class="fab fa-linkedin-in font-14"></i></a>
+            <a href="#" class="shareToWhatsApp mb-3 icon icon-s bg-whatsapp rounded-xs text-uppercase font-900"><i class="fab fa-whatsapp font-14"></i></a>
+            <a href="#" class="shareToMail mb-3 icon icon-s bg-blue-dark rounded-xs text-uppercase font-900"><i class="fa fa-envelope font-14"></i></a>
+        
+            <div class="divider mt-3"></div>
+            
+            <h4>What content can I use here?</h4>
+            <p>You can use an content you want from our item in this area. Simple, fast and effective way to create instant articles.</p>
+            
+            <div class="row">
+                <div class="col-4"><a href="images/pictures/17.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/17s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/12.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/12s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/19.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/19s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+            </div>
+            
+            <h4>Any content. Any place.</h4>
+            <p>Instant articles support any content from our template, and it works like a charm!</p>
+            
+            <div class="divider mt-3"></div>
+            
+            <ul class="icon-list line-height-xl font-14">
+                <li><i class="fa fa-check color-green-dark"></i>Sed vulputate metus non massa sagittis euismod.</li>
+                <li><i class="fa fa-star color-yellow-dark"></i>Donec pretium est eget urna iaculis, quis iaculis libero porta.</li>
+                <li><i class="fa fa-heart color-red-dark"></i>Mauris gravida libero non est blandit, eget volutpat metus sodales.</li>
+                <li><i class="fa fa-circle color-magenta-dark"></i>Nullam dapibus ex non leo placerat, vitae eleifend lectus rhoncus.</li>
+                <li><i class="fa fa-square color-pink-light"></i>Morbi vel turpis lacinia, rhoncus metus non, dictum sapien.</li>
+            </ul> 
+
+            <div class="divider"></div>
+            
+            <a href="#" class="close-menu btn btn-m rounded-sm text-uppercase font-700 shadow-xxl btn-full bg-highlight mb-4">Close Article</a>
+        
+        </div>        
+    </div>
+
+    
+    <div id="menu-article-card-3" 
+         class="menu menu-box-right" 
+         data-menu-width="100%" 
+         data-menu-effect="menu-parallax">
+        
+        <div class="card bg-6 mb-3" data-card-height="350">
+            <div class="card-top no-click"><span class="badge bg-blue-dark px-3 py-3 m-3 text-uppercase rounded-s float-right">SCULPTURE</span></div>
+            <div class="card-top"><a href="#" class="close-menu badge bg-black color-white px-3 py-3 m-3 text-uppercase rounded-s"><i class="fa fa-arrow-left pr-3"></i> Back to List</a></div>
+        </div>
+        
+        <div class="row mb-0">
+            <div class="col-6"><p class="opacity-50 mb-2"><i class="fa fa-user px-3"></i>Enabled</p></div>
+            <div class="col-6"><p class="opacity-50 mb-2 text-right">15th September <span class="copyright-year"></span><i class="fa fa-clock px-3"></i></p></div>
+        </div>
+        <div class="divider opacity-70"></div>
+        
+        <div class="content">
+            <h1>Wood Structures back in Fashion</h1>
+            <p>Article cards allow you to move in menus from the left and from the right, even from the top and bottom. This allows you to create content similar to Facebook's instant article right inside your page.</p>
+            <a href="#" class="shareToFacebook mb-3 icon icon-s bg-facebook rounded-xs text-uppercase font-900"><i class="fab fa-facebook-f font-14"></i></a>
+            <a href="#" class="shareToTwitter mb-3 icon icon-s bg-twitter rounded-xs text-uppercase font-900"><i class="fab fa-twitter font-14"></i></a>
+            <a href="#" class="shareToPinterest mb-3 icon icon-s bg-pinterest rounded-xs text-uppercase font-900"><i class="fab fa-pinterest font-14"></i></a>
+            <a href="#" class="shareToLinkedin mb-3 icon icon-s bg-linkedin rounded-xs text-uppercase font-900"><i class="fab fa-linkedin-in font-14"></i></a>
+            <a href="#" class="shareToWhatsApp mb-3 icon icon-s bg-whatsapp rounded-xs text-uppercase font-900"><i class="fab fa-whatsapp font-14"></i></a>
+            <a href="#" class="shareToMail mb-3 icon icon-s bg-blue-dark rounded-xs text-uppercase font-900"><i class="fa fa-envelope font-14"></i></a>
+        
+            <div class="divider mt-3"></div>
+            
+            <h4>What content can I use here?</h4>
+            <p>You can use an content you want from our item in this area. Simple, fast and effective way to create instant articles.</p>
+            
+            <div class="row">
+                <div class="col-4"><a href="images/pictures/17.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/17s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/12.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/12s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+                <div class="col-4"><a href="images/pictures/19.jpg" data-lightbox="gallery-1" title="Your Caption Goes Here"><img src="images/pictures/19s.jpg" class="img-fluid rounded-sm shadow-xl"></a></div>
+            </div>
+            
+            <h4>Any content. Any place.</h4>
+            <p>Instant articles support any content from our template, and it works like a charm!</p>
+            
+            <div class="divider mt-3"></div>
+            
+            <ul class="icon-list line-height-xl font-14">
+                <li><i class="fa fa-check color-green-dark"></i>Sed vulputate metus non massa sagittis euismod.</li>
+                <li><i class="fa fa-star color-yellow-dark"></i>Donec pretium est eget urna iaculis, quis iaculis libero porta.</li>
+                <li><i class="fa fa-heart color-red-dark"></i>Mauris gravida libero non est blandit, eget volutpat metus sodales.</li>
+                <li><i class="fa fa-circle color-magenta-dark"></i>Nullam dapibus ex non leo placerat, vitae eleifend lectus rhoncus.</li>
+                <li><i class="fa fa-square color-pink-light"></i>Morbi vel turpis lacinia, rhoncus metus non, dictum sapien.</li>
+            </ul> 
+
+            <div class="divider"></div>
+            
+            <a href="#" class="close-menu btn btn-m rounded-sm text-uppercase font-700 shadow-xxl btn-full bg-highlight mb-4">Close Article</a>
+        
+        </div>        
+    </div>
+
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

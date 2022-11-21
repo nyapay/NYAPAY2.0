@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Cookie Boxes</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+
+        <div class="alert alert-small alert-content card visit-detection never-visited pt-4" role="alert">
+            <div class="content mt-1 mx-0 mb-3">
+                <h1 class="font-18 mb-1">Howdy Stranger!</h1>
+                <p>
+                    This is your first visit, when you'll come back to this page, this will no longer appear.
+                </p>
+            </div>
+            <button type="button" class="close color-black font-16" data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle color-red-dark"></i></button>
+        </div>    
+
+        <div class="alert alert-small alert-content card  visit-detection before-visited" role="alert">
+            <div class="content mt-2 mx-0 mb-3 ">
+                <h1 class="font-18 mb-1">Welcome Back</h1>
+                <p class="mb-n2">
+                    If you're seeing this box, it means our system detected you were here previously, and is now showing you a welcome back message.<br>
+                </p>
+                <p class="visit-before-time font-700 color-theme mb-n4"></p>
+            </div>
+            <button type="button" class="close color-black font-16" data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle color-red-dark"></i></button>
+        </div>    
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">
+            <h4 class="mb-1">Cookie Policy</h4>
+            <p class="mb-3">
+                Notify your users about your privacy policy, compliance requirements and more..
+            </p>
+            <div class="list-group list-custom-small">
+                <a href="#" data-menu="menu-cookie-bottom">
+                    <span>Action Sheet</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-cookie-modal">
+                    <span>Modal Window</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+                <a href="#" data-menu="menu-cookie-simple" class="border-0">
+                    <span>Classic Simple</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>        
+            </div>
+        </div>    
+        
+        <div class="divider divider-margins"></div>
+
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page Content Ends Here-->
+    
+    <div id="menu-cookie-simple" class="menu menu-box-bottom" 
+         data-menu-height="260"
+         data-menu-effect="menu-over"
+         data-menu-select="page-components">
+        <!-- add data-cookie-activate above to auto-activate the menu on cookie detection -->
+        <div class="menu-title">
+            <h1>Cookies</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mt-0">
+            <p class="pr-3">
+                To bring you the best experience we're using cookies in our page. Don't worry, these are stored locally on your computer, and we don't share data.
+            </p>
+            <a href="#" class="close-menu btn btn-m btn-full font-700 text-uppercase color-white bg-green-dark">Accept & Continue</a>
+        </div>
+    </div>     
+    
+    <div id="menu-cookie-bottom" class="menu menu-box-bottom" 
+         data-menu-height="260"
+         data-menu-effect="menu-over"
+         data-menu-select="page-components">
+        <!-- add data-cookie-activate above to auto-activate the menu on cookie detection -->
+        <div class="menu-title">
+            <h1>Cookies</h1>
+            <a href="#" class="close-menu"><i class="fa fa-times-circle"></i></a>
+        </div>
+        <div class="content mt-0">
+            <p class="pr-3">
+                To bring you the best experience we're using cookies in our page. Don't worry, these are stored locally on your computer, and we don't share data.
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full font-700 text-uppercase color-white bg-blue-dark">More Info</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full font-700 text-uppercase color-white bg-green-dark">Accept</a>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+    <div id="menu-cookie-modal" class="menu menu-box-modal menu-box-detached" 
+         data-menu-height="250"
+         data-menu-width="340"
+         data-menu-effect="menu-over"
+         data-menu-select="page-components">
+        <!-- add data-cookie-activate above to auto-activate the menu on cookie detection -->
+        <h1 class="text-center font-30 pl-0 mt-4">Cookies</h1>
+        <div class="content text-center mt-0">
+            <p class="pr-3">
+                To bring you the best experience we're using cookies in our page. Don't worry, these are stored locally on your computer, and we don't share data.
+            </p>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full font-700 text-uppercase color-white bg-blue-dark">More Info</a>
+                </div>
+                <div class="col-6">
+                    <a href="#" class="close-menu btn btn-m btn-full font-700 text-uppercase color-white bg-green-dark">Accept</a>
+                </div>
+            </div>
+        </div>
+    </div>     
+
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

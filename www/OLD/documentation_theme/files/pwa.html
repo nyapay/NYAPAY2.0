@@ -1,0 +1,252 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>PWA Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Enabled">
+	<meta name="copyright" content="Enabled">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2019-05-27T15:39:30+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-pwa-documentation">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#what_is_a_pwa" title="What is a PWA?">What is a PWA?</a></li>
+			<li><a href="#service_worker" title="Service Worker">Service Worker</a></li>
+			<li><a href="#manifest" title="Manifest">Manifest</a></li>
+			<li><a href="#updating_content" title="Updating Content">Updating Content</a></li>
+			<li><a href="#offline_functionallity" title="Offline Functionallity">Offline Functionallity</a></li>
+			<li><a href="#still_not_there" title="Still not there?">Still not there?</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Enabled 2019<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>PWA Documentation</h1>
+	
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	
+	<li>by: Enabled</li>
+	<li><a href=""></a></li>
+	
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="what_is_a_pwa">
+	<div class="page-header"><h3>What is a PWA?</h3><hr class="notop"></div>
+<p>
+	A PWA is defined as a Progressive Web Application, made to turn your website into an application. There are a few restrictions to this, and we&#39;ll cover them here.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="service_worker">
+	<div class="page-header"><h3>Service Worker</h3><hr class="notop"></div>
+<p>
+	A PWA requires a service worker to work, this is registered at the top of scripts/pwa.js and can be found in the main folder called _service-worker.js.&nbsp;</p>
+<p>
+	The service worker we used in our item is called Workbox, and its powered by the same developers that created PWA&#39;s, meaning Google.&nbsp;</p>
+<p>
+	To give our item more PWA related options you can read and learn more about service workers on workbox&#39;s official website and follow their detailed guides there -&nbsp;<a href="https://developers.google.com/web/tools/workbox/">https://developers.google.com/web/tools/workbox/</a></p>
+<p>
+	Remember, all service worker related codes must be added inside the _service-worker.js file.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	We strongly recommend reading more about the service worker and getting to understand how these work following this link as well -&nbsp;<a href="https://developers.google.com/web/tools/workbox/">https://developers.google.com/web/tools/workbox/</a></p>
+</section>
+<section id="manifest">
+	<div class="page-header"><h3>Manifest</h3><hr class="notop"></div>
+<p>
+	In order for your Android device ( iOS doesn&#39;t have this option ) to detect the website as an application, you require a manifest.json file. This can be found in the main folder named as _manifest.json</p>
+<p>
+	&nbsp;</p>
+<p>
+	The manifest file already contains all the necessary images and splash screens for your website to have the icons and the splash screen required to function. We recommend you don&#39;t modify these in the _manifest.json file but edit them in the&nbsp;<strong>app</strong> folder found in the main folder.</p>
+<p>
+	Please keep in mind that the resolutions there&nbsp;<strong>must remain the same</strong>.</p>
+</section>
+<section id="updating_content">
+	<div class="page-header"><h3>Updating Content</h3><hr class="notop"></div>
+<p>
+	In the case of PWA&#39;s the current king is Android, with by far the best and simplest implementation methods available.</p>
+<p>
+	<strong>How do I update content on an Android Device?</strong></p>
+<p>
+	On an Android device, you don&#39;t have to worry about the app not updating if you change the content when it&#39;s been installed to the home screen, it will automatically detect the service worker preferences and update the content ( we set it to network first ) therefore your app will always be updated.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>How do I update content on an iOS Device?</strong></p>
+<p>
+	iOS is lagging far behind Androids when it comes to PWA&#39;s. Therefore, there are a few workarounds that must be followed to ensure your app will work properly if used on iOS.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>iOS Bug 1 ( Please note. These are bugs that come from iOS, not our product. They&#39;ve been reported all over the internet ever since the release of iOS 10, but Apple has taken no measure to fix them! )&nbsp;</strong></p>
+<p>
+	On iOS once you install the app to your homepage, this will&nbsp;<strong>never</strong> update. Meaning, your content can end up being old. To overcome this issue we made a few small tricks that will asure your version is always the latest.&nbsp;</p>
+<p>
+	Let&#39;s explain the issue in depth. Once you save your app to your iOS device, iOS will create a carbon copy of it on your phone, no longer listening to the service worker for updates and no longer connected to your server. Apple claims that this &quot;updates after some time&quot; without providing a proper time. From our tests, even after 1 week the app was still serving the old content. Therefore, the solution for this is simple.</p>
+<p>
+	<strong>After updating content on iOS to update the app on your device, follow these steps:&nbsp;</strong></p>
+<p>
+	1. Open&nbsp;<strong><strong>&nbsp;_manifest.json&nbsp;</strong></strong>and replace the version number on line 2.&nbsp;</p>
+<p>
+	2. Open&nbsp;<strong>scripts/pwa.js&nbsp;</strong>and place the&nbsp;<strong>exact</strong> same number on line 11 in pwa_version.&nbsp;</p>
+<p>
+	<strong>Be sure that the version inside _manifest.json and scripts/pwa.js are the same!&nbsp;</strong></p>
+<p>
+	3. Upload the _manifest.json and the scripts/pwa.js to your server in their approrpriate locations</p>
+<p>
+	4. After 60 seconds the PWA will detect this and refresh the entire item, serving new content.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>How does the update system work?</strong></p>
+<p>
+	It&#39;s very simple. When you save the website to your iOS device, it makes a copy of the website to your device. Our code will compare the version every 60 seconds of the <strong>LOCAL</strong> scripts/pwa.js to the one of the <strong>ONLINE&nbsp;</strong>version in _manifest.json. When the 2 versions are identical, it means the app is updated. If the versions are diffferent it will trigger a window that will reload the entire page and content after 5 seconds serving you with brand new content.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Is this really necessary?</strong></p>
+<p>
+	Yes, unfortunately, Apple is really lagging behind on the PWA scene. Google has even opened the PlayStore to using PWA&#39;s, but Apple is unwilling to do so and is really causing nightmares for developers and customers such as yourself. This solution is elegant and solves the issue of being unable to reload new content on demand. We also tried the pull to refresh version but that ended up causing bugs with scrolling and decided that this version is much better, since it includes about 45kb less code ( important for website version ) and doesn&#39;t require a user interaction. You decide when new content is available.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>How can I reduce the check time?&nbsp;</strong></p>
+<p>
+	The item always check the code when opened and once every 60 seconds. The manifest.js file has only 1kb so the download size is really irrelevant to your speed. It will not affect loading speeds at all.&nbsp;</p>
+<p>
+	You can reduce this time by changing this code in pwa.js ( should be on line 71 )&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+setInterval(function(){versionCheck()}, 57000)</pre>
+<p>
+	The 57000 value means 57 seconds. Replace it will a lower or higher value as needed. Just please keep in mind that iOS freezes the JavaScript function when the app is minimized. Therefore a 60 second time should be good for your users.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="offline_functionallity">
+	<div class="page-header"><h3>Offline Functionallity</h3><hr class="notop"></div>
+<p>
+	Offline functionallity is still far from being perfect, again due to iOS lagging behind.&nbsp;</p>
+<p>
+	In the case of Android devices, you can setup the service worker ( see link in service worker for guide ) to work 100% completely offline, but on iOS this is not possible. If you set your device offline in iOS it will generate a 404 error when you try to open a page that will cause the app to stop working.</p>
+<p>
+	To prevent this, we disabled offline functionallity using the following code in pwa.js.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+    function returnFalse(){
+        var detectHREF = $(this).attr(&#39;href&#39;);
+        if(detectHREF.match(/.html/)){
+            isOffline();
+            return false;
+        }  
+    }   </pre>
+<p>
+	&nbsp;</p>
+<p>
+	If you wish to enable offline usage, you will have to replace the code above with this code&nbsp;</p>
+<pre class="prettyprint lang-js linenums">
+function returnFalse(){}</pre>
+<p>
+	Please remember, if you plan on offering this solution for iOS as well, we&nbsp;<strong>strongly</strong> recommend leaving offline functionallity disabled until iOS gets their issues resovled so your users can use the page with certainty that they won&#39;t encounter a critical error that will leave the app broken.&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="still_not_there">
+	<div class="page-header"><h3>Still not there?</h3><hr class="notop"></div>
+<p>
+	If you require help with your PWA using our code, please open a support ticket on our support website and we&#39;ll gladly assist.&nbsp;</p>
+<p>
+	<a href="https://support.wethemes.com/">https://support.wethemes.com/</a></p>
+</section>
+
+	</div>
+</body>
+</html>

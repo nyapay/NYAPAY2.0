@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>NYAPAY - Paiement fermé</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="../theme/assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="../theme/assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="../theme/assets/css/style.css">
+    <link rel="manifest" href="../theme/__manifest.json">
+    <!-- <meta http-equiv="Content-Security-Policy"  content="default-src * 'self' 'unsafe-inline' data: gap: 'unsafe-eval'; style-src * 'self' 'unsafe-inline';  connect-src * ; script-src * 'self' 'unsafe-inline'; media-src *">-->
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-grow text-dark" role="status"></div>
+    </div>
+    <!-- * loader -->
+    
+    
+    <!-- sync loader  -->
+    <span id="spinner-loader" class="spinner-border text-dark float-right mt-2 mr-2" role="status"></span>
+    <!-- * sync loader  -->
+
+    
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="header-large-title">
+            <h1 class="title text-center">Vendre</h1>
+        </div>
+        
+        <!-- pilled tab debit -->
+        <div class="tab-pane fade show active page" id="debitpage" role="tabpanel">
+
+            <div class="section full mt-1">
+                <div class="wide-block pt-2 pb-2">
+
+                    <ul class="nav nav-tabs style1" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#debit" role="tab">
+                                Vendre
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" id="tab_debit_transaction_list" href="#transaction_list" role="tab">
+                                Mes transactions
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-2" >
+                        <div class="tab-pane fade tab-debit show active" id="debit" role="tabpanel">                            
+                            <form class="mt-6">
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-10">
+                                           <input type="text" class="largeField text-center text-dark calc_debit" id="debit_amount"  disabled>
+                                           </input>
+                                        </div>
+                                        <div class="col-2">
+                                             <span class="btn btn-text-danger shadowed ce"  onclick="ce_debit()">&times;</span>
+                                        </div>
+                                    </div>                                       
+                    
+                                </div>
+                               <table class="table table-sm mt-4 mt-5">
+                                    <tbody>
+                                        <tr>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("7")'>7</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("8")'>8</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("9")'>9</button></td>
+                                         <td class="text-center"><button type="button" class='btn btn-warning calc-button px-4' onclick='chr_debit("+")'>+</button></td>
+                                        </tr>
+                                        <tr>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("4")'>4</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("5")'>5</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("6")'>6</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-warning shadowed calc-button big-button px-4' onclick='chr_debit("-")'>-</button></td>
+                                        </tr>
+                                        <tr>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("1")'>1</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("2")'>2</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("3")'>3</button></td>
+                                       <td class="text-center"><button type="button" class='btn btn-warning shadowed calc-button px-4' onclick='chr_debit("*")'>x</button></td>
+                                        </tr>
+                                        <tr>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button big-button text-center px-4' onclick='chr_debit(".")'>.</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='chr_debit("0")'>0</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-text-dark shadowed calc-button px-4' onclick='eq_debit()'>=</button></td>
+                                        <td class="text-center"><button type="button" class='btn btn-warning shadowed calc-button px-4' onclick='chr_debit("÷")'>÷</button></td>
+                                        </tr>
+                                        <tr >
+                                    
+                                        <td colspan="4" class="text-center"><button type="button" class='btn btn-lg btn-block btn-dark shadowed mt-4' onclick='ScanDebitCard()'>VENDRE</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade tab-debit" id="transaction_list" role="tabpanel">
+                            <!--<div class="text-center">	
+                                <a id="synchro_transaction_valid"  class="p-2 badge badge-pill badge-primary mb-2 text-dark" >Synchroniser </a>
+                            </div>-->
+                            <form >
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="transaction_search" placeholder="Rechercher une transaction">
+                            </div>
+                            </form>
+                            <table id="transaction_list_table" class="table table-hover" width="100%">
+                                <thead > 
+                                    <tr>
+                                        <th> Date</th>
+                                        <th> Montant</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                              <tbody id="transaction_list_body" ></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- * pilled tab debit -->
+        
+        <!-- SCAN DEBIT PAGE --> 
+        <div class="section full mt-1 page" id="scandebitpage">
+            <div class="wide-block pt-2 pb-2">
+                <form>
+                    <div class="text-center"> 
+                        
+                        <img class="img-fluid img-responsive mb-4 " src="../images/logo_scan.png" alt="" width="250" height="250">
+						<div class="mt-4">
+						  <div class="pulse-container">  
+							<div class="pulse-bubble pulse-bubble-1"></div>
+							<div class="pulse-bubble pulse-bubble-2"></div>
+							<div class="pulse-bubble pulse-bubble-3"></div>
+							<div class="pulse-bubble pulse-bubble-4"></div>
+							<div class="pulse-bubble pulse-bubble-5"></div>
+						  </div>
+						</div>
+                        <h1 class="font-weight-light h1-small  mt-4"> Montant : <span id="debit_amount_recap"></span>  </h1>
+                        <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden"  id="debit_type" value="1" >
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden"  id="debit_amount_scan">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden"  id="debit_amount_commission_scan">
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden"  id="debit_percentage_scan">
+                    </div>
+                    <div class="text-center mt-5">	
+                        <a class="btn btn-lg btn-text-dark shadowed px-4"  onclick="CancelDebitCard()">FERMER</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- * SCAN DEBIT PAGE --> 
+        
+        <!-- TERMINAL PAGE -->				
+        <div class="section full mt-1 page" id="terminalpage">
+            <div class="wide-block pt-2 pb-2">
+                <form >
+                    <div class="form-group">
+                        <label for="terminal_name">Nom Terminal</label>
+                        <input type="text" class="form-control" id="terminal_name"  disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="terminal_number">Numero Terminal</label>
+                        <input type="text" class="form-control" id="terminal_number"  disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="terminal_user">Numero Utilisateur Terminal</label>
+                        <input type="text" class="form-control" id="terminal_user" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="terminal_username">Nom Utilisateur Terminal</label>
+                        <input type="text" class="form-control" id="terminal_username" disabled>
+                    </div>
+                    <div class="form-group">
+                        <label for="terminal_version">Version Application</label>
+                        <input type="text" class="form-control" id="terminal_version"  disabled>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        
+        
+        <!-- INFO PAGE -->				
+        <div class="section full mt-1 page" id="infopage">
+            <div class="wide-block pt-2 pb-2">
+                <form class="text-center">
+                    <h1 class="font-weight-light h1-small  mb-4"> Information sur la carte</h1>
+                    <div class="form-group">
+                        <h3 class="font-weight-light" id="info_user"></h3>
+                    </div>
+                    <div class="form-group">
+                        <h3 class="font-weight-light" id="info_card_number"></h3>
+                    </div>
+                    <div class="form-group">
+                        <h2 class="text-center"> <span class="badge" id="info_state"></span></h2>
+                    </div>
+                    <div class="form-group">
+                        <h2 class="info_amount" id="info_amount"></h2>
+                    </div>
+                    <a class="btn btn-lg btn-text-dark shadowed px-4 navigation" id="info_back">FERMER</a>
+                </form>
+            </div>
+        </div>
+        <!-- * INFO PAGE -->
+        
+        <!-- SCAN INFO PAGE --> 
+        <div class="section full mt-1 page" id="scaninfopage">
+            <div class="wide-block pt-2 pb-2">
+                <form>
+                    <div class="text-center"> 
+                        <img class="img-fluid img-responsive mb-4 " src="../images/logo_scan.png" alt="" width="250" height="250">
+						<div class="mt-4">
+						  <div class="pulse-container">  
+							<div class="pulse-bubble pulse-bubble-1"></div>
+							<div class="pulse-bubble pulse-bubble-2"></div>
+							<div class="pulse-bubble pulse-bubble-3"></div>
+							<div class="pulse-bubble pulse-bubble-4"></div>
+							<div class="pulse-bubble pulse-bubble-5"></div>
+						  </div>
+						</div>
+                        <h1 class="font-weight-light h1-small  mt-4"> Information sur la carte  </h1>
+                        <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                    </div>
+                    <div class="text-center mt-5">	
+                        <a class="btn btn-lg btn-text-dark navigation shadowed px-4"  href="#debitpage">RETOUR</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- * SCAN INFO PAGE -->
+
+
+        <!-- Modal Detail Transaction -->
+        <div class="modal fade modalbox" id="TransactionsDetails" data-backdrop="static" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Transaction</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                         <div class="form-group">
+							<label for="detail_sync">Etat</label>
+							<input type="text" class="form-control" id="detail_sync"  disabled>
+						  </div>
+						  <div class="form-group">
+							<label for="detail_date">Date et Heure de transaction</label>
+							<input type="text" class="form-control" id="detail_date"  disabled>
+						  </div>
+						  <div class="form-group">
+							<label for="detail_card_number">Numero de carte</label>
+							<input type="text" class="form-control" id="detail_card_number"   disabled>
+						  </div>
+						  <div class="form-group">
+							<label for="debit_amount">Montant</label>
+							<input type="number" class="form-control" id="detail_amount"  disabled>
+						  </div>
+						  <div class="form-group">
+							<label for="detail_type">Type</label>
+							<input type="text" class="form-control" id="detail_type" disabled>
+						  </div>
+                          <div class="text-center">
+                            <button type="button" class="btn btn-lg btn-dark" data-dismiss="modal">FERMER</button>
+                          </div>
+						</form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Modal Detail Transaction -->    
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a type="button" class="item disabled">
+            <div class="col" id="cloud-status">
+                <span id="cloud_online"><ion-icon name="cloudy-outline"></ion-icon></span>
+                <span id="cloud_offline"><ion-icon name="cloud-offline-outline"></ion-icon></span>
+                <strong id="connection_status"></strong>
+            </div>
+        </a>
+        <a type="button" class="item" >
+            <div class="col">
+                <ion-icon name="mail-outline"></ion-icon>
+                <strong>0 message</strong>
+            </div>
+        </a>
+        <a type="button" class="item" onclick="BackToIndex('Vente')">
+            <div class="col">
+                <div class="action-button large">
+                    <img class="img-fluid img-responsive" src="../images/logo.png" alt="" width="25" height="25">
+                </div>
+            </div>
+        </a>
+        <a type="button" class="item" id="synchro"  name="synchro"  >
+            <div class="col">
+                <ion-icon name="sync-outline"></ion-icon>
+                <strong>Synchronisation</strong>
+            </div>
+        </a>
+        <a href="javascript:;" class="item" data-toggle="modal" data-target="#sidebarPanel">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+                <strong>Menu</strong>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+    
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+
+                    <!-- profile box -->
+                    <div class="profileBox">
+                        <div class="image-wrapper">
+                            <img src="../images/logo.png" alt="image" class="imaged">
+                        </div>
+                        <div class="in">
+                            <strong>NYAPAY</strong>
+                            <div class="text-muted">
+                                Paiement fermé
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="close-sidebar-button" data-dismiss="modal">
+                            <ion-icon name="close"></ion-icon>
+                        </a>
+                    </div>
+                    <!-- * profile box -->
+
+                    <ul class="listview flush transparent no-line image-listview mt-2">
+                        <li>
+                            <a href="#debitpage" class="item navigation">
+                                <div class="icon-box bg-dark">
+                                    <!--<ion-icon name="home-outline"></ion-icon>-->
+                                </div>
+                                <div class="in">
+                                    Vendre
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#scaninfopage" class="item navigation">
+                                <div class="icon-box bg-dark">
+                                    <!--<ion-icon name="logo-euro"></ion-icon>-->
+                                </div>
+                                <div class="in">
+                                    Scanner carte
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#terminalpage" class="item navigation">
+                                <div class="icon-box bg-warning">
+                                </div>
+                                <div class="in">
+                                    Mon Terminal
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+
+    
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+	
+    <script type="text/javascript" src="../js/databaseHandler.js"></script>
+    <script type="text/javascript" src="../js/productHandler.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/Dateformat.min.js"></script>
+    <script type="text/javascript" src="../js/disable_validation.js"></script>
+    <script type="text/javascript" src="../controller/credit.js"></script>
+    <script type="text/javascript" src="../controller/debit.js"></script>
+    <script type="text/javascript" src="../controller/synchro.js"></script>
+    <script type="text/javascript" src="../controller/init.js"></script>
+    <script type="text/javascript" src="../controller/active.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+
+
+    <!-- Bootstrap-->
+    <script src="../theme/assets/js/lib/popper.min.js"></script>
+    <script src="../theme/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../theme/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="../theme/assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="../theme/assets/js/base.js"></script>
+    <!-- Crypto -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+</body>
+
+</html>

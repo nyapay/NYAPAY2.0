@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Wallet</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear-medium">
+          
+        <div data-card-height="250" class="card mx-3 rounded-sm bg-3">
+            <div class="card-bottom mx-2">
+                <h1 class="color-white mb-n1">Enabled</h1>
+                <p class="mb-2 color-white opacity-50 under-heading font-12">1234 5678 9012 3456</p>
+            </div>
+            <div class="card-top m-3">
+                <h1 class="text-right color-white font-32 bolder right-20 top-20">$1.523</h1>
+            </div>
+            <div class="card-top mx-3">
+            </div>
+            <div class="card-bottom mx-3">
+                <p class="text-right mb-0 font-8 font-500 opacity-50 color-white"><i class="fa fa-wifi font-10 rotate-90"></i></p>
+                <p class="font-8 mb-2 font-500 opacity-50 color-white text-right">Exp: 10/22</p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>   
+        </div>
+        <div class="tab-wrapper">
+            <div class="content">
+                <div class="tab-controls tab-animated tabs-medium tabs-rounded shadow-xl" 
+                     data-tab-items="2" 
+                     data-tab-active="bg-blue-dark color-white">
+                    <a href="#"  class="font-12" data-tab-active data-tab="tab-activity">Activity</a>
+                    <a href="#"  class="font-12" data-tab="tab-overview">Overview</a>
+                </div>
+                <div class="clearfix mb-3"></div>
+                <div class="tab-content" id="tab-activity">
+                    <div class="list-group list-custom-large mr-2">
+                        <a href="#">
+                            <i class="fab font-20 fa-apple bg-brown-dark"></i>
+                            <span class="font-13">Apple Music</span>
+                            <strong class="font-12">Monthly Subscription</strong>
+                            <span class="badge bg-blue-dark font-11 color-white">$24.99</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>     
+                        <a href="#">
+                            <i class="fa font-20 fa-user bg-blue-dark"></i>
+                            <span class="font-13">Affiliate Earnings</span>
+                            <strong class="font-12">Commission Payments</strong>
+                            <span class="badge bg-green-dark font-11 color-white">$154.99</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>        
+                        <a href="#">
+                            <i class="fab font-20 fa-spotify bg-green-dark"></i>
+                            <span class="font-13">Spotify Premium</span>
+                            <strong class="font-12">Monthly Subscription</strong>
+                            <span class="badge bg-blue-dark font-11 color-white">$24.99</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>     
+                        <a href="#">
+                            <i class="fa font-20 fa-heart bg-red-dark"></i>
+                            <span class="font-13">Gym Subscription</span>
+                            <strong class="font-12">Monthly Subscription</strong>
+                            <span class="badge bg-blue-dark font-11 color-white">$24.99</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>     
+                        <a href="#">
+                            <i class="fa font-20 fa-dollar-sign bg-green-dark"></i>
+                            <span class="font-13">Bank Added Funds</span>
+                            <strong class="font-12">Monthly Subscription</strong>
+                            <span class="badge bg-green-dark font-11 color-white">$1250.00</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>     
+                    </div>
+                </div>
+                <div class="tab-content " id="tab-overview">
+                    <div class="content mb-0">
+                        <p>A graphical view of your wallet. The expenses, incomes and available funds in your account. These are created using the powerful charts.js plugin.</p>
+                        <div class="chart-container mb-4" style="width:100%; height:350px;">
+                            <canvas class="chart" id="vertical-chart"/>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="alert mr-3 ml-3 rounded-s bg-green-dark" role="alert">
+            <span class="alert-icon color-white"><i class="fa fa-check font-18"></i></span>
+            <h4 class="color-white font-16 font-600">New Transfer Received</h4>
+            <strong class="alert-icon-text color-white font-10 opacity-50">$1500 have been credited to your account.</strong>
+            <button type="button" class="close color-white opacity-60 font-16" data-dismiss="alert" aria-label="Close">&times;</button>
+        </div>    
+
+
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Events</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear-medium">
+        <div class="card card-style bg-1" data-card-height="200">
+            <div class="card-top pt-4">
+                <h1 class="text-center text-uppercase mb-n2 color-white">Product Release</h1>
+                <p class="text-center font-11 color-white">We're happy to announce our latest product.</p>
+            </div>
+            <div class="card-bottom px-3">
+                <div class="d-flex">
+                    <div>
+                        <p class="color-white mb-0"><i class="far fa-calendar pr-2"></i> August, 28 <i class="pl-4 far fa-clock"></i> 09:00 PM</p>
+                        <p class="color-white mb-2"><i class="fa fa-map-marker pr-3"></i>Melbourne Victoria, Australia.</p>
+                    </div>
+                    <div class="ml-auto">
+                        <a href="#" class="btn btn-m bg-white color-black rounded-sm text-uppercase font-800">Tap to View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-red-dark opacity-90"></div>
+        </div>
+     
+        <div class="card card-style bg-3" data-card-height="200">
+            <div class="card-top p-3">
+                <h1 class="font-700 font-22 color-white">Gradient Event Card</h1>
+                <p class="color-white mb-0"><i class="far fa-calendar pr-2"></i> August, 28 <i class="pl-4 far fa-clock"></i> 09:00 PM</p>
+                <p class="color-white mb-2"><i class="fa fa-map-marker pr-3"></i>Melbourne Victoria, Australia.</p>
+            </div>
+            <div class="card-bottom px-3 mb-3">
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <img src="images/avatars/2s.png" width="40" class="bg-white rounded-s p-1">
+                    </div>    
+                    <div class="px-3 align-self-center">
+                        <h5 class="color-white font-14 font-600 mb-n1">Jack's Cousin</h5>
+                        <p class="font-11 mb-0 color-white">Event Creator</p>
+                    </div>
+                    <div class="align-self-center ml-auto">
+                        <a href="#" class="btn btn-m bg-white color-black rounded-sm text-uppercase font-800">Tap to View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay gradient-green opacity-90"></div>
+        </div>
+        
+        <div class="card card-style bg-3" data-card-height="150">
+            <div class="card-center p-3 no-click">
+                <h1 class="font-700 font-22 color-white">Small Event Card</h1>
+                <p class="color-white mb-0"><i class="far fa-calendar pr-2"></i> August, 28 <i class="pl-4 far fa-clock"></i> 09:00 PM</p>
+                <p class="color-white mb-2"><i class="fa fa-map-marker pr-3"></i>Melbourne Victoria, Australia.</p>
+            </div>
+            <div class="card-center">
+                <a href="#" class="btn btn-s bg-blue-dark rounded-m text-uppercase font-800 float-right shadow-xxl mx-3">Join Event</a>
+            </div>
+            <div class="card-overlay gradient-blue opacity-90"></div>
+        </div>
+        
+        <div class="content">
+            <div class="card card-style mx-0 bg-3" data-card-height="200"></div>
+            <h1>Bike for Freedom</h1>
+            <p class="mt-n2 color-highlight">We have something Special for You</p>
+            <div class="list-group list-custom-large">
+                <a href="#">
+                    <i class="far fa-calendar color-blue-dark font-20"></i>
+                    <span>Sat, May 25 <text class="copyright-year"></text></span>
+                    <strong>10:00 AM - 11:30 AM</strong>
+                    <span class="badge bg-blue-dark">SAVE EVENT</span>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-map-marker color-red-dark font-20"></i>
+                    <span>Palo Alto, California</span>
+                    <strong>Outside the Apple Campus</strong>
+                    <span class="badge bg-blue-dark">SEE ON MAP</span>
+                    <i class="fa fa-circle"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-ticket-alt color-green-dark font-18"></i>
+                    <span>Invite Only</span>
+                    <strong>VIP Pass - $250</strong>
+                    <span class="badge bg-blue-dark">GET TICKET</span>
+                    <i class="fa fa-circle"></i>
+                </a>
+            </div>
+            <a href="#" class="btn btn-m btn-full bg-highlight text-uppercase font-700 rounded-sm mt-3">REQUEST INVITATION TO EVENT</a>
+        </div>
+     
+        <div class="mt-5"></div>
+        
+        <div class="content">
+            <div class="card card-style mx-0 bg-4" data-card-height="200"></div>
+            <div class="d-flex">
+                <div class="align-self-center">
+                    <h1>Light Art Gallery</h1>
+                    <p class="mt-n2"><i class="fa fa-map-marker"></i> Melbroune, Victoria, Collins Street</p>
+                </div>
+                <div class="align-self-center ml-auto">
+                    <a href="#" class="btn btn-m bg-highlight text-uppercase font-700 rounded-sm">Join Event</a>
+                </div>
+            </div>
+            <div class="row mb-0">
+                <div class="col-6">
+                    <h5 class="font-14 font-600 mt-3">Date:</h5>
+                    <p class="mb-0">
+                        <i class="fa fa-calendar pr-3"></i>28th August <span class="copyright-year"></span>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <h5 class="font-14 font-600 mt-3">Time:</h5>
+                    <p class="mb-0">
+                        <i class="fa fa-clock pr-3"></i>28th August <span class="copyright-year"></span>
+                    </p>
+                </div>
+            </div>
+            <h5 class="font-14 font-600 mt-3">Description:</h5>
+            <p>
+                Are you a fan of codng? Then this is the even for you! Join today and you get free gear for the duration of the event.
+            </p>
+
+            <a href="#" class="btn btn-m btn-full bg-highlight text-uppercase font-700 rounded-sm mt-3">REQUEST INVITATION TO EVENT</a>
+        </div>
+     
+        <div class="divider divider-margins"></div>
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

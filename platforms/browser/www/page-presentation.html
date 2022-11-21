@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+	<title>NYAPAY | Application de paiement</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">
+	<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+	<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+
+<body class="theme-dark">
+
+	<div id="preloader">
+		<div class="spinner-border color-highlight" role="status"></div>
+	</div>
+
+	<div id="page">
+
+		<div class="page-content">
+			<div data-card-height="cover-card" class="card bg-2 mb-0">
+				<div class="text-right mt-3 mr-3">
+					<img src="images/icon_app/icon.png" class="mb-5" height="40px" width="40px" />
+				</div>
+				<div class="card-center mx-4">
+					<h1 class="color-white text-uppercase font-30">Bienvenue</h1>
+					<h1 class="color-white text-uppercase font-40">NYAPAY</h1>
+					<div class="divider mt-2 mb-4 divider-small w-50 bg-orange-light m-0"></div>
+					<p class="color-white  opacity-80  mr-3 pr-3">
+						NYAPAY est une solution de paiement fermé qui aide au developpemment du commerce en diminuant
+						les frais bancaires
+					</p>
+					<button type="button" class="btn btn-xl  rounded-s bg-blue-dark text-uppercase font-500 "
+						onclick="LaunchTerminal()">Commencer l'encaissement </button>
+				</div>
+				<div class="card-overlay bg-gradient2"></div>
+			</div>
+		</div>
+
+		<!-- Notification -->
+		<div id="notification-error" data-delay="5000" data-autohide="true"
+			class="notification bg-red-dark shadow-xl opacity-95 fade hide">
+			<div class="toast-body color-white p-3">
+				<span><i class="fa fa-exclamation-triangle color-white"></i></span>
+				<strong id="notification-error-text" class="color-white  font-500"></strong>
+			</div>
+		</div>
+
+		<div id="notification-warning" data-delay="5000" data-autohide="true"
+			class="notification bg-orange-dark shadow-xl opacity-95 fade hide">
+			<div class="toast-body color-white p-3">
+				<span><i class="fa fa-exclamation-triangle color-white"></i></span>
+				<strong id="notification-warning-text" class="color-white  font-500"></strong>
+			</div>
+		</div>
+
+		<div id="notification-success" data-delay="3000" data-autohide="true"
+			class="notification bg-green-dark shadow-xl opacity-95 fade hide">
+			<div class="toast-body color-white p-3">
+				<span><i class="fa fa-exclamation-triangle color-white"></i></span>
+				<strong id="notification-warning-text" class="color-white  font-500"></strong>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/Database.js"></script>
+	<script type="text/javascript" src="scripts/SqlFunction.js"></script>
+	<script type="text/javascript" src="scripts/presentation.js"></script>
+	<script type="text/javascript" src="scripts/welcome.js"></script>
+	<script type="text/javascript" src="scripts/install.js"></script>
+	<script type="text/javascript" src="scripts/transaction-list.js"></script>
+	<script type="text/javascript" src="scripts/card-list.js"></script>
+	<script type="text/javascript" src="scripts/log-list.js"></script>
+	<script type="text/javascript" src="scripts/pay.js"></script>
+	<script type="text/javascript" src="scripts/grant.js"></script>
+	<script type="text/javascript" src="scripts/init.js"></script>
+	<script type="text/javascript" src="scripts/active.js"></script>
+	<script type="text/javascript" src="scripts/synchro.js"></script>
+	<script type="text/javascript" src="scripts/dashboard.js"></script>
+	<script type="text/javascript" src="scripts/calculator.js"></script>
+	<script type="text/javascript" src="scripts/crypto-js.min.js"></script>
+	<script type="text/javascript" src="scripts/custom.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
+
+</body>

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>NYAPAY - Paiement fermé</title>
+    <meta name="description" content="Paiement fermé">
+    <meta name="keywords" content="Application de Yannick NYA" />
+    <link rel="icon" type="image/png" href="theme/assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="theme/assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="theme/assets/css/style.css">
+    <link rel="manifest" href="theme/__manifest.json">
+    <meta http-equiv="Content-Security-Policy"  content="default-src * 'self' 'unsafe-inline' data: gap: 'unsafe-eval'; style-src * 'self' 'unsafe-inline';  connect-src * ; script-src * 'self' 'unsafe-inline'; media-src *">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/toastr.css">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-grow text-dark" role="status"></div>
+    </div>
+    <!-- * loader -->
+    
+    <!-- sync loader  -->
+    <span id="spinner-loader" class="spinner-border text-dark float-right mt-2 mr-2" role="status"></span>
+    <!-- * sync loader  -->
+
+
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+        <div class="header-large-title">
+            <h1 class="title text-center mode-text">Bienvenue</h1>
+            <p>
+        </div>
+        
+        
+        <!-- PRELOADER WELCOME PAGE --> 
+        <div class="mt-2 page" id="preloadwelcomepage">
+            <div id="loader">
+                <div class="spinner-grow text-warning" role="status"></div>
+            </div>
+        </div>
+        <!-- * PRELOADER WELCOME PAGE --> 
+        
+        
+        <!-- WELCOME PAGE --> 
+        <div class="mt-2 page" id="welcomepage">
+
+			<div class="wide-block pt-2 pb-2">
+
+				<img src="images/slide1.jpg" class=" img-fluid " alt="">
+                
+                
+                <div>
+                    <h2 class="mt-2 text-center" id="company_name"></h2>
+                    <p class="card-text mt-4">Nous sommes heureux que vous utilisez NYAPAY  Notre Solution de paiement fermé</p>
+
+                    <button type="button" class="btn btn-lg bg-dark  shadowed mt-2  btn-block" id="check_grant" role="button">ENCAISSER</button>
+                </div>
+			</div>
+
+        </div>
+        <!-- * WELCOME PAGE --> 
+        
+        
+        <!-- MODE PAGE --> 
+        <div class="mt-2 page" id="modepage">
+
+			<div class="wide-block pt-2 pb-2">
+
+                
+                <div class="text-center">
+                    <div class="row m-1 mt-2 section-mode" id="section_all_mode">
+
+                     <button type="button" class="btn bg-dark btn-lg2 shadowed  mt-4 mb-2  btn-block"  id="debit_mode" role="button" onclick="ChooseMode('debit')">VENDRE</button>
+                     <button type="button" class="btn bg-dark btn-lg2 shadowed  mb-2 btn-block"  id="credit_mode" role="button" onclick="ChooseMode('credit')">RECHARGER</button>
+                     <button type="button" class="btn bg-dark btn-lg2 shadowed  btn-lg btn-block"  id="admin_mode" role="button" onclick="ChooseMode('admin')">ADMINISTRATION</button>
+
+                    </div>
+                    <h1 class="font-weight-light h1-small  mt-4"> Choisir un mode</h1>
+                    <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                </div>
+			</div>
+
+        </div>
+        <!-- * MODE PAGE --> 
+		
+		<!-- SCAN GRANT PAGE --> 
+        <div class="section full mt-1 page" id="scangrantpage">
+            <div class="wide-block pt-2 pb-2">
+                <form>
+                    <div class="text-center"> 
+                       <img class="img-fluid img-responsive mb-4 " src="images/logo_scan.png" alt="" width="250" height="250"> 
+						<div class="mt-4">
+						  <div class="pulse-container">  
+							<div class="pulse-bubble pulse-bubble-1"></div>
+							<div class="pulse-bubble pulse-bubble-2"></div>
+							<div class="pulse-bubble pulse-bubble-3"></div>
+							<div class="pulse-bubble pulse-bubble-4"></div>
+							<div class="pulse-bubble pulse-bubble-5"></div>
+						  </div>
+						</div>
+                        <h1 class="font-weight-light h1-small  mt-4"> Authentification</h1>
+                        <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                    </div>
+					<!-- mode choosed before -->
+					<div class="form-group">
+						<input type="hidden"  id="mode_choosed" >
+					</div>
+                    <div class="text-center mt-4">	
+                        <a class="btn btn-lg btn-text-dark shadowed px-4"  onclick="CloseGrant()">ANNULER</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- * SCAN GRANT PAGE --> 
+		
+	
+
+		<!-- SCAN ERROR PAGE --> 
+        <div class="section full mt-1 page" id="GrantErrorPage">
+            <div class="wide-block pt-2 pb-2">
+                <form>
+                    <div class="text-center"> 
+                       <img class="img-fluid img-responsive mb-4 mt-3" src="images/close.png" alt="" width="90" height="90"> 
+                        <h1 class="font-weight-light h1-small  mt-4"> Authentification</h1>
+                        <h3 class="text-center text-danger mt-4"> Vous n'avez  pas les autorisations nécessaires pour utiliser ce mode ! </h3> 
+                        <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                    </div>
+                    <div class="text-center mt-4">	
+                        <a class="btn btn-lg btn-text-dark shadowed px-4"  onclick="CloseGrant()">FERMER</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+		<!-- * SCAN ERROR PAGE -->
+
+
+		<!-- TERMINAL BLOCKED PAGE --> 
+        <div class="section full mt-1 page" id="TerminalBlockedPage">
+            <div class="wide-block pt-2 pb-2">
+                <form>
+                    <div class="text-center"> 
+                       <img class="img-fluid img-responsive mb-4 mt-3" src="images/close.png" alt="" width="90" height="90"> 
+                        <h1 class="font-weight-light h1-small  mt-4"> Authentification</h1>
+                        <h3 class="text-center text-danger mt-4"> Le terminal est configuré sur un mode auquel vous ne pouvez pas avoir accès !</h3> 
+                        <p class="text-muted mt-4 mb-2"> Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires </p>
+                    </div>
+                    <div class="text-center mt-4">	
+                        <a class="btn btn-lg btn-text-dark shadowed px-4"  onclick="CloseGrant()">FERMER</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+		<!-- * TERMINAL BLOCKED PAGE --> 	 		
+		
+		
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->    
+    <div class="appBottomMenu">
+         <a type="button" class="item disabled">
+            <div class="col" id="cloud-status">
+                <span id="cloud_online"><ion-icon name="cloudy-outline"></ion-icon></span>
+                <span id="cloud_offline"><ion-icon name="cloud-offline-outline"></ion-icon></span>
+                <strong id="connection_status"></strong>
+            </div>
+        </a>
+        <a type="button" class="item" >
+            <div class="col">
+                <ion-icon name="mail-outline"></ion-icon>
+                <strong>0 message</strong>
+            </div>
+        </a>
+        <a href="index.html" class="item">
+            <div class="col">
+                <div class="action-button large">
+                    <img class="img-fluid img-responsive" src="images/logo.png" alt="" width="25" height="25">
+                </div>
+            </div>
+        </a>
+        <a type="button" class="item" id="synchro"  name="synchro"  >
+            <div class="col">
+                <ion-icon name="sync-outline"></ion-icon>
+                 <strong>Synchronisation</strong>
+            </div>
+        </a>
+        <a type="button" class="item" >
+            <div class="col">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                <strong id="version_app"></strong>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+	
+	<script type="text/javascript" src="js/toastr.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap4.min.js"></script>
+
+
+	
+    <script type="text/javascript" src="js/databaseHandler.js"></script>
+    <script type="text/javascript" src="js/productHandler.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/Dateformat.min.js"></script>
+    <script type="text/javascript" src="js/disable_validation.js"></script>
+    <script type="text/javascript" src="controller/credit.js"></script>
+    <script type="text/javascript" src="controller/debit.js"></script>
+    <script type="text/javascript" src="controller/synchro.js"></script>
+    <script type="text/javascript" src="controller/init.js"></script>
+    <script type="text/javascript" src="controller/active.js"></script>
+    <script type="text/javascript" src="controller/update.js"></script>
+   
+    
+
+    <!-- Bootstrap-->
+    <script src="theme/assets/js/lib/popper.min.js"></script>
+    <script src="theme/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="theme/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="theme/assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="theme/assets/js/base.js"></script>
+    <!-- Crypto -->
+    <script src="js/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

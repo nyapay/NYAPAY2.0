@@ -1,0 +1,259 @@
+/*Menus & Action Sheets & Modals*/
+
+$theme-dark-menu-hider: rgba(0,0,0,0.7);
+$theme-light-menu-hider: rgba(0,0,0,0.35);
+
+/*--Menu System---*/
+.menu-title {
+    position:relative;
+	h1 {
+		font-size: 24px;
+		font-weight: 800;
+		padding: 20px 0px 10px 15px!important;
+	}
+	p {
+        font-weight:600;
+        font-size:12px;
+		margin: 15px 0px -25px 15px!important;
+		padding: 0px 0px 0px 0px;
+	}
+	a {
+		font-size: 20px;
+		color: $red;
+		position: absolute;
+		text-align: center;
+		width: 55px;
+		right: 0px;
+        top:50%;
+        margin-top:-5px;
+    }
+}
+.menu-bg {
+	background-color: $theme-light-background; 
+}
+.menu-hider {
+	position: fixed;
+	top: -100px;
+	bottom: -100px;
+	left: 0px;
+	right: 0px;
+	background-color: $theme-light-menu-hider;
+	z-index: 100;
+	pointer-events: none;
+	opacity: 0;
+	transition: $globalTransitions;
+}
+.menu {
+	position: fixed;
+    background-color: $theme-light-structure;
+	z-index: 101;
+	overflow: scroll;
+	transition: $globalTransitions;
+	-webkit-overflow-scrolling: touch;
+	.content {
+		margin-bottom: 0px !important;
+	}
+}
+.menu-box-left {
+	left: 0px;
+	top: 0px !important;
+	width: 250px;
+	height: 100%;
+	bottom: 0px;
+	transform: translate3d(-100%,0,0);
+}
+.menu-box-right {
+    display:none;
+	right: 0px;
+	transform: translateX(100%);
+	top: 0px !important;
+	height: 100%;
+	bottom: 0px;
+	width: 250px;
+}
+//.menu-header .card-top{
+//    padding-top: calc(4px + (constant(safe-area-inset-top))) !important;
+//    padding-top: calc(4px + (env(safe-area-inset-top))) !important;
+//}
+//
+.menu-box-top {
+	transform: translate3d(0, -115%, 0);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 300px;
+}
+
+.menu-box-bottom {
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 300px;
+	transform: translate3d(0, 110%, 0);
+}
+.menu-box-modal {
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0,0);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 350ms ease!important;
+}
+.menu-box-top.menu-box-detached {
+	top: 10px;
+	left: 10px;
+	right: 10px;
+}
+.menu-box-bottom.menu-box-detached {
+	bottom: 20px;
+	left: 10px;
+	right: 10px;
+}
+.menu-box-left.menu-active {transform: translate3d(0%, 0, 0) !important;}
+.menu-box-right.menu-active {transform: translate3d(0%, 0, 0) !important;}
+.menu-box-top.menu-active {transform: translate3d(0%, 0, 0) !important;}
+.is-on-homescreen {
+	.menu-box-top.menu-active {
+		transform: translate3d(0%, 40px, 0) !important;
+	}
+}
+.menu-box-bottom.menu-active {
+	transform: translate3d(0%, 20px, 0) !important;
+}
+.menu-box-bottom-full.menu-active {
+	transform: translate3d(0%, 0px, 0) !important;
+}
+.menu-box-modal.menu-active {
+    top:50%!important;
+    transform:translate(-50%, -50%) scale(1,1)!important;
+	transition: all 350ms ease!important;
+	pointer-events: all !important;
+	opacity: 1 !important;
+}
+.menu-hider.menu-active {
+	transition: $globalTransitions;
+	opacity: 1;
+	pointer-events: all;
+}
+.menu-hider.menu-active.menu-active-clear {
+	background-color: $color-transparent !important;
+}
+.menu-box-left[data-menu-effect="menu-reveal"] {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(0px) !important;
+	z-index: 96;
+}
+.menu-box-right[data-menu-effect="menu-reveal"] {
+	opacity: 0;
+	pointer-events: none;
+	transform: translate(0px) !important;
+	z-index: 96;
+}
+.menu-active.menu {
+	opacity: 1 !important;
+	transition: $globalTransitions;
+	pointer-events: all !important;
+}
+/*Menu Update*/
+#menu-update {
+	background-color: $color-white;
+	position: fixed;
+	z-index: 9999;
+	width: 310px;
+	height: 430px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	pointer-events: none;
+	border-radius: 10px;
+	transition: $globalTransitions;
+}
+.menu-active {
+	opacity: 1 !important;
+}
+.menu-active-no-click {
+	opacity: 1;
+	background-color: $theme-dark-menu-hider;
+	pointer-events: all !important;
+}
+#menu-install-pwa-ios {
+	overflow: visible !important;
+}
+.fa-ios-arrow {
+	transform: translateY(4px);
+}
+.theme-light {
+	.fa-ios-arrow {
+		color: $color-white !important;
+	}
+}
+
+.menu-open{
+    overflow:hidden!important;
+}
+
+/*Menu Design*/
+
+/*Menu*/
+
+.menu-divider{
+    border-top:solid 1px rgba(0,0,0,0.01);
+    border-bottom:solid 1px rgba(0,0,0,0.01);
+    background-color:rgba(0,0,0,0.03);
+    text-transform:uppercase;
+    font-weight:600;
+    font-size:10px;
+    letter-spacing:0.3px;
+    line-height:16px;
+    padding:11px 15px 11px 22px;
+    color:#1f1f1f;
+    margin-bottom:0px;
+}
+.menu-divider i{
+    position: absolute;
+    right:19px;
+    font-size:9px;
+    margin-top:3px;
+}
+
+.theme-light .menu .active-nav{font-weight:700; color:#000!important;}
+.theme-dark .menu .active-nav{font-weight:700; color:#FFF!important;}
+.menu-list .active-nav i{color:$colorHighlightDark!important;}
+
+
+.menu-box-right .menu-active ::after,
+.menu-box-left .menu-active ::after {
+    font-family: $fontAwesome;
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    font-size:8px;
+    margin-top: 0.5px;
+    content: "\f111";
+    opacity: 1;
+    color:#A0D468;
+}
+
+.menu span{font-weight:400;}
+.menu .menu-active span{
+    font-family:$font-heading-family;
+    font-weight:800!important;
+    opacity:1!important;
+    font-size:13px!important;
+}
+.menu .list-custom-small i:first-child{font-size:12px!important;}
+.menu .list-custom-small i:last-child{opacity:0.2; font-size:5px!important;}
+.menu .list-custom-small{margin-right:21px; margin-left:8px;}
+.menu .list-custom-small span{color:#1f1f1f; font-size:13px; padding-left:5px;}
+
+
+#menu-contact textarea, #menu-contact input[type="text"], #menu-contact input[type="email"]{
+    height:40px!important;
+    transition:all 250ms ease;
+}
+
+#menu-contact textarea:focus{
+    height:250px!important;
+}

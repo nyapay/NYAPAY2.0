@@ -1,0 +1,597 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title">APPECA</a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+        <a href="#" data-menu="menu-contact" class="header-icon header-icon-2"><i class="far fa-envelope"></i></a>
+        <a href="#" data-menu="menu-bell"    class="header-icon header-icon-3"><i class="far fa-bell"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-4"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-welcome" data-menu-effect="menu-parallax"></div>
+    <div id="menu-bell" class="menu menu-box-top" data-menu-load="menu-bell.html" data-menu-height="470" data-menu-effect="menu-parallax"></div>
+    <div id="menu-contact" class="menu menu-box-bottom" data-menu-load="menu-contact.html" data-menu-height="470"  data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+          
+        <div class="card bg-25" data-card-height="300">
+            <div class="card-bottom">
+                <h1 class="color-white text-center mb-0 font-24">Menu Styles</h1>
+                <p class="boxed-text-xl color-white opacity-60">
+                    Any menu, from any position, perfectly animated and easy to use. Appeca comes packed and pepared.
+                </p>
+            </div>
+            <div class="card-overlay bg-gradient"></div>
+        </div>
+        
+        <div class="content mt-0">
+            <h4>Left Sidebars</h4>
+            <div class="list-group list-custom-small">
+                <a href="#" data-menu="menu-sidebar-left-parallax">
+                    <i class="fa fa-arrow-right color-red-dark"></i>
+                    <span>Sidebar Left Large - Parallax</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-left-push">
+                    <i class="fa fa-arrow-right color-green-dark"></i>
+                    <span>Sidebar Left Large - Push</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-left-over">
+                    <i class="fa fa-arrow-right color-blue-dark"></i>
+                    <span>Sidebar Left Large - Over</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-left-small">
+                    <i class="fa fa-arrow-right color-yellow-dark"></i>
+                    <span>Sidebar Left Small Icons</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+            </div>
+        </div>     
+        
+        <div class="content mt-4">
+            <h4>Right Sidebars</h4>
+            <div class="list-group list-custom-small">
+                <a href="#" data-menu="menu-sidebar-right-parallax">
+                    <i class="fa fa-arrow-left color-red-dark"></i>
+                    <span>Sidebar Right Large - Parallax</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-right-push">
+                    <i class="fa fa-arrow-left color-green-dark"></i>
+                    <span>Sidebar Right Large - Push</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-right-over">
+                    <i class="fa fa-arrow-left color-blue-dark"></i>
+                    <span>Sidebar Right Large - Over</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-sidebar-right-small">
+                    <i class="fa fa-arrow-left color-yellow-dark"></i>
+                    <span>Sidebar Right Small Icons</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+            </div>
+        </div>        
+        
+        <div class="content mt-4">
+            <h4>Modal Styles</h4>
+            <div class="list-group list-custom-small">
+                <a href="#" data-menu="menu-modal">
+                    <i class="fa fa-square color-red-dark"></i>
+                    <span>Classic Menu Box</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-modal-full">
+                    <i class="fa fa-expand color-green-dark"></i>
+                    <span>Classic Full Menu</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-grid-icons">
+                    <i class="fa fa-th-large color-blue-dark"></i>
+                    <span>Grid Icon Menu</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="#" data-menu="menu-large-type">
+                    <i class="fa fa-bold color-orange-dark"></i>
+                    <span>Large Type Menu</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+            </div>
+        </div>
+        
+ 
+        <div class="content mt-5">
+            <h4>So Much More!</h4>
+            <p>
+                Appeca has Action Sheets, Action Modals, Snackbars, Toasts and so much, much more! Check them out below.
+            </p>
+            <div class="list-group list-custom-small">
+                <a href="component-toasts.html" data-menu="menu-modal">
+                    <span>View Toasts</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="component-snackbars.html" data-menu="menu-modal-full">
+                    <span>View Snackbars</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="component-action-sheets.html" data-menu="menu-grid-icons">
+                    <span>View Action Sheets</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+                <a href="component-action-modals.html" data-menu="menu-large-type">
+                    <span>View Action Modals</span>
+                    <i class="fa fa-angle-right font-8 opacity-50"></i>
+                </a>
+            </div>
+        </div>
+        
+ 
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-left-parallax" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-parallax">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-left-push" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-push">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-left-over" class="menu menu-box-left" data-menu-width="280" data-menu-effect="menu-over">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Small Icons-->
+    <div id="menu-sidebar-left-small" class="menu menu-box-left" data-menu-width="80" data-menu-effect="menu-over">
+        <div class="text-center mt-3 notch-clear">
+            <a href="#"><i class="fa fa-star color-yellow-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Welcome</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-home color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Home</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-cog color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Features</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-camera color-teal-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Media</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-file color-magenta-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Pages</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-newspaper color-gray-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">News</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-shopping-bag color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Store</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-pen color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Blog</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-envelope color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Contact</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-times color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Close</span></a>
+            <div class="divider mt-3 mb-3"></div>
+        </div>
+    </div>
+
+         
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-right-parallax" class="menu menu-box-right" data-menu-width="280" data-menu-effect="menu-parallax">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-right-push" class="menu menu-box-right" data-menu-width="280" data-menu-effect="menu-push">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Large Parallax-->
+    <div id="menu-sidebar-right-over" class="menu menu-box-right" data-menu-width="280" data-menu-effect="menu-over">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Left Sidebar Small Icons-->
+    <div id="menu-sidebar-right-small" class="menu menu-box-right" data-menu-width="80" data-menu-effect="menu-over">
+        <div class="text-center mt-3 notch-clear">
+            <a href="#"><i class="fa fa-star color-yellow-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Welcome</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-home color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Home</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-cog color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Features</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-camera color-teal-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Media</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-file color-magenta-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Pages</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-newspaper color-gray-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">News</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-shopping-bag color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Store</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-pen color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Blog</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-envelope color-blue-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Contact</span></a>
+            <div class="divider mt-3 mb-3"></div>
+            <a href="#"><i class="fa fa-times color-red-dark font-20"></i><span class="d-block font-10 font-700 color-theme text-uppercase">Close</span></a>
+            <div class="divider mt-3 mb-3"></div>
+        </div>
+    </div>
+
+        
+    <!-- Menu Modal-->
+    <div id="menu-modal" class="menu menu-box-modal" data-menu-width="330" data-menu-height="450">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+
+    </div>
+    
+    <!-- Menu Modal Full-->
+    <div id="menu-modal-full" class="menu menu-box-modal" data-menu-width="100%" data-menu-height="100%">
+        <div class="divider mb-0"></div>
+        <div class="d-flex notch-clear">
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-facebook-f color-facebook"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-twitter color-twitter"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fab fa-instagram color-instagram"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l"><i class="font-12 fa fa-phone color-phone"></i></a></div>
+            <div class="mx-auto"><a href="#" class="icon icon-l close-menu"><i class="font-13 fa fa-times color-red-dark"></i></a></div>
+        </div>
+        <div class="divider"></div>
+        <a href="#" class="d-block px-3 mx-1"><h1 class="pt-1 text-uppercase font-30">Appeca</h1><p class="mt-n3 font-10 opacity-50">The Ultimate Mobile PWA</p></a>
+        <p class="menu-divider">Navigation <i class="fa fa-bars"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="index.html" id="nav-welcome"><i class="fa fa-star color-yellow-dark"></i><span class="font-400">Welcome</span><i class="fa fa-angle-right"></i></a>
+            <a href="index.html" id="nav-homepages"><i class="fa fa-home color-brown-dark"></i><span class="font-400">Homepages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-components"><i class="fa fa-cog color-blue-dark"></i><span class="font-400">Components</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-navigations"><i class="fa fa-bars color-teal-dark"></i><span class="font-400">Navigations</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-pages"><i class="fa fa-heart color-red-dark"></i><span class="font-400">Pages</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-media"><i class="fa fa-image color-green-dark"></i><span class="font-400">Media</span><i class="fa fa-circle"></i></a>
+            <a href="index.html" id="nav-templates"><i class="fa fa-shopping-bag color-brown-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i>
+            </a><a href="index.html" id="nav-contact" class="border-0"><i class="fa fa-envelope color-blue-dark"></i><span class="font-400">Templates</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Get Social <i class="fa fa-share-alt"></i></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="tel:+1 234 567 890"><i class="fa fa-phone color-green-dark"></i><span class="font-400">Call Us</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-facebook-f color-facebook"></i><span class="font-400">Facebook</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-twitter color-twitter"></i><span class="font-400">Twitter</span><i class="fa fa-circle"></i></a>
+            <a href="#"><i class="fab fa-instagram color-instagram"></i><span class="font-400">Instagram</span><i class="fa fa-circle"></i></a>
+        </div>
+        <p class="menu-divider">Copyright Enabled <span class="copyright-year"></span></p>
+        <div class="list-group list-custom-small menu-list">
+            <a href="#" class="close-menu"><i class="fa fa-times color-red-dark"></i><span class="font-400">Close</span><i class="fa fa-circle"></i></a>
+        </div>
+
+    </div>
+
+
+    <!-- Menu Grid-->
+    <div id="menu-grid-icons" class="menu menu-box-modal" data-menu-width="100%" data-menu-height="100%">
+        <div class="content text-center">
+            <h1 class="text-uppercase font-28 mt-4">Appeca</h1>
+            <p class="mb-3 mt-n2 font-11">Elite Mobile Experiences</p>
+        </div>
+        <div class="row text-center mt-5 mx-3">
+            <div class="col-4">
+                <a href="#"><i class="fa fa-star color-yellow-dark font-24"></i><p class="font-10 font-700">WELCOME</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-home color-blue-dark font-24"></i><p class="font-10 font-700">WELCOME</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-cog color-red-dark font-24"></i><p class="font-10 font-700">WELCOME</p></a>
+            </div>
+            <div class="col-12 my-2"></div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-camera color-yellow-dark font-24"></i><p class="font-10 font-700">MEDIA</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-file color-blue-dark font-24"></i><p class="font-10 font-700">PAGES</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-newspaper color-red-dark font-24"></i><p class="font-10 font-700">NEWS</p></a>
+            </div>
+            <div class="col-12 my-2"></div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-shopping-bag color-brown-dark font-24"></i><p class="font-10 font-700">STORE</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-bars color-magenta-dark font-24"></i><p class="font-10 font-700">MENUS</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-pen color-gray-dark font-24"></i><p class="font-10 font-700">BLOG</p></a>
+            </div>
+            <div class="col-12 my-2"></div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-envelope color-blue-dark font-24"></i><p class="font-10 font-700">CONTACT</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fa fa-phone color-green-dark font-24"></i><p class="font-10 font-700">CALL US</p></a>
+            </div>
+            <div class="col-4">
+                <a href="#" class="close-menu"><i class="fa fa-times color-red-dark font-24"></i><p class="font-10 font-700">CLOSE</p></a>
+            </div>
+            <div class="col-12 mt-5"></div>
+            <div class="col-4 pl-5">
+                <a href="#" class="pl-5"><i class="fab fa-facebook color-facebook font-24"></i></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><i class="fab fa-instagram color-instagram font-24"></i></a>
+            </div>
+            <div class="col-4 pr-5">
+                <a href="#" class="pr-5"><i class="fab fa-twitter color-twitter font-24"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Large Type-->
+    <div id="menu-large-type" class="menu menu-box-modal bg-black" data-menu-width="100%" data-menu-height="100%">
+        <div class="content text-center">
+            <h1 class="color-white pt-4 text-uppercase font-35">Appeca</h1>
+            <p class="mt-n2 color-white opacity-50 mb-5">Elite Mobile Experiences</p>
+            
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Welcome</a>
+            <a href="#" class="d-block py-3 font-30 color-red-light font-600">Home</a>
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Features</a>
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Media</a>
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Pages</a>
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Contact Us</a>
+            <a href="#" class="d-block py-3 font-24 color-white opacity-50 font-300">Call Us</a>
+            <a href="#" class="close-menu d-block py-3 font-24 color-white opacity-50 font-300">Close</a>
+            
+            <div class="row mb-0 text-center px-5 pt-5 mt-4">
+                <div class="col-4 pl-5">
+                    <a href="#" class="color-white font-18 p-2"><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="color-white font-18 p-2"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="col-4 pr-5">
+                    <a href="#" class="color-white font-18 p-2"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

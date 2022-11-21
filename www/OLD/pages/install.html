@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>NYAPAY - Paiement fermé</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 4, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="../theme/assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="../theme/assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="../theme/assets/css/style.css">
+    <link rel="manifest" href="../theme/__manifest.json">
+    <!-- <meta http-equiv="Content-Security-Policy"  content="default-src * 'self' 'unsafe-inline' data: gap: 'unsafe-eval'; style-src * 'self' 'unsafe-inline';  connect-src * ; script-src * 'self' 'unsafe-inline'; media-src *">-->
+    <link rel="stylesheet" href="../css/style.css" >
+    <link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="../css/toastr.css">
+</head>
+
+<body>
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-grow text-dark" role="status"></div>
+    </div>
+    <!-- * loader --> 
+
+    <!-- sync loader  -->
+        <span id="spinner-loader" class="spinner-border text-dark float-right mt-2 mr-2" role="status"></span>
+    <!-- * sync loader  -->    
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+
+        <div class="header-large-title">
+            <h1 class="title text-center"> NYAPAY</h1>
+            <h3 class=" text-center"> Merci de configurer le terminal</h3>
+        </div>
+        
+        
+        <!-- INSALL PAGE --> 
+        <div class="section full mt-1 page" id="installpage">
+            <div class="wide-block pt-2 pb-2">
+                <form >
+                    <div class="form-group">
+                    <label for="terminal_number">Numero du terminal</label>
+                    <input type="text" class="form-control text-uppercase" id="terminal_number" >
+                    </div>
+                   <div class="form-group">
+                    <label for="terminal_user">Numero d'utilisateur</label>
+                    <input type="number" class="form-control" id="terminal_user">
+                  </div>
+                  <div class="form-group">
+                    <label for="terminal_pin">Pin</label>
+                    <input type="number" class="form-control " id="terminal_pin">
+                  </div>
+                  <div class="form-group">
+                    <label for="terminal_url">URL/IP du serveur</label>
+                    <input type="text" class="form-control" id="terminal_url" value="https://pay.jegere.eu">
+                  </div>
+
+                     <div class="text-center">
+                        <a  id="valid_info_terminal"  class="btn btn-lg btn-dark btn-block shadowed px-4 mt-2" ><img class="img-fluid img-responsive" src="../images/logo.png" alt="" width="25" height="25"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- * INSALL PAGE --> 
+        
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+       <p class="subtitle text-muted text-center">Toute utilisation de notre application sans autorisation peut entrainer des poursuites judiciaires</p>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- ///////////// Js Files ////////////////////  -->
+
+    
+    <script type="text/javascript" src="../cordova.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    
+    	<script type="text/javascript" src="../js/toastr.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/dataTables.bootstrap4.min.js"></script>
+
+	
+    <script type="text/javascript" src="../js/databaseHandler.js"></script>
+    <script type="text/javascript" src="../js/productHandler.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/Dateformat.min.js"></script>
+    <script type="text/javascript" src="../js/disable_validation.js"></script>
+    <script type="text/javascript" src="../controller/credit.js"></script>
+    <script type="text/javascript" src="../controller/debit.js"></script>
+    <script type="text/javascript" src="../controller/synchro.js"></script>
+    <script type="text/javascript" src="../controller/init.js"></script>
+    <script type="text/javascript" src="../controller/active.js"></script>
+    <script type="text/javascript" src="../controller/update.js"></script>
+
+
+    <!-- Bootstrap-->
+    <script src="../theme/assets/js/lib/popper.min.js"></script>
+    <script src="../theme/assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../theme/assets/js/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- jQuery Circle Progress -->
+    <script src="../theme/assets/js/plugins/jquery-circle-progress/circle-progress.min.js"></script>
+    <!-- Base Js File -->
+    <script src="../theme/assets/js/base.js"></script>
+    <!-- Crypto -->
+    <script src="../js/crypto-js.min.js" integrity="sha512-nOQuvD9nKirvxDdvQ9OMqe2dgapbPB7vYAMrzJihw5m+aNcf0dX53m6YxM4LgA9u8e9eg9QX+/+mPu8kCNpV2A==" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

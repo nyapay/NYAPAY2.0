@@ -1,0 +1,2 @@
+page info => http://192.168.1.38:3000/page-wallet.html
+liste des transactions => http://192.168.1.38:3000/blog-list-1.html; http://192.168.1.38:3000/page-careers.html

@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Progress Bars</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+
+        
+        <div class="content">
+            <h4>Transfer<span class="badge float-right color-blue-dark">5 Min Left</span></h4>
+            <div class="progress" style="height:24px;">
+                <div class="progress-bar rounded-0 border-0 bg-blue-dark text-left pl-2" 
+                     role="progressbar" style="width: 65%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                    <span class="position-absolute color-white">65% Complete</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h4>Migrate Server<span class="badge float-right color-red-dark">Error</span></h4>
+            <p class="mb-2">
+                An error occured while transfering your server. Please try again later or contact support.
+            </p>
+            <div class="progress" style="height:24px;">
+                <div class="progress-bar rounded-0 border-0 bg-red-dark text-left pl-2" 
+                     role="progressbar" style="width: 28%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                    <span class="position-absolute color-white">28% Complete</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content">
+            <h4>Upgrade Appeca</h4>
+            <p class="mt-n2 color-highlight mb-3">Bring new Features to Customers</p>
+            <div class="progress rounded-0" style="height:28px">
+                <div class="progress-bar bg-green-dark text-left pl-3 color-white" 
+                     role="progressbar" style="width: 93%" 
+                     aria-valuenow="10" aria-valuemin="0" 
+                     aria-valuemax="100">
+                     93% Complete
+                </div>
+            </div>
+            <p class="pt-3">
+                We use a custom coded progress system to generate progress bars with great ease. No need for complicated JS. Just data- your parameters and our code will generate the progress bar for you.
+            </p>
+        </div>
+        
+        <div class="divider divider-margins"></div>
+
+        <div data-card-height="190" class="card bg-17">
+            <div class="card-top pt-4 ml-3 mr-3">
+                <h1 class="color-white font-600">Develop Card Bar</h1>
+                <p class="mt-n1 opacity-60 color-white">For Progress Bars with an awesome design and easy to create elements for customers to enjoy.</p>
+            </div>
+            <div class="card-bottom ml-3 mr-3 mb-4">
+                <div class="progress" style="height:26px;">
+                    <div class="progress-bar border-0 bg-theme color-theme text-right pr-2" 
+                         role="progressbar" style="width:90%" 
+                         aria-valuenow="10" aria-valuemin="0" 
+                         aria-valuemax="100">
+                         90% Complete
+                    </div>
+                </div>
+            </div>
+            <div class="card-overlay bg-black opacity-85"></div>
+        </div>
+                
+        <div class="divider divider-margins"></div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page Content Ends Here-->
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

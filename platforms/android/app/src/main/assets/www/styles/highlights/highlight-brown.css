@@ -1,0 +1,30 @@
+/* Generating Color Pack*/
+.color-highlight {
+  color: #AA8E69 !important;
+}
+
+.bg-highlight {
+  background-color: #AA8E69 !important;
+  color: #FFF !important;
+}
+
+.border-highlight {
+  border-color: #AA8E69 !important;
+}
+
+.gradient-highlight {
+  background-image: linear-gradient(to bottom, #BAA286, #AA8E69) !important;
+}
+
+.gradient-menu {
+  background-image: linear-gradient(130deg, #7ea5f6, #ff384c) !important;
+}
+
+/*Input Fields*/
+.input-style .input-style-1-active {
+  color: #BAA286 !important;
+}
+
+.input-style input:focus, .input-style textarea:focus, .input-style select:focus {
+  border-color: #BAA286;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-dark">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+	
+	<div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title">Information</a>
+        <a href="#" data-menu="menu-main" class="header-icon header-icon-1"><i class="fa fa-bars"></i></a>
+    </div>
+
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main-simple.html" data-menu-width="280" data-menu-active="nav-components" ></div>
+    
+    <div class="page-content header-clear-medium">
+        
+		<div class="app-page app-page-info">		
+			<div data-card-height="250" class="card mx-3 rounded-s bg-black ">
+				<div class="card-bottom mx-2">
+					<p class="mb-2 color-white opacity-50 under-heading font-12">2020/12/18 14:30</p>
+				</div>
+				<div class="card-top m-3">
+					<h1 class="text-right color-white font-20 bolder right-20 top-20">300 Frcfa</h1>
+				</div>
+				<div class="card-center text-center mt-3">
+					<div class="mt-3 color-red-dark font-30">
+						Transaction echouée
+					</div>
+					<p class= "font-20"> carte bloquée </p>
+				</div>
+				<div class="card-bottom mx-3 mt-4">
+					<p class="text-right mb-3 "><img class="text-right" src="images/icon_app/logo.png" height="30px" width="30px" alt=""></p>
+				</div> 
+			</div>
+			
+			<div class="card mx-3 rounded-s bg-transparent scroll" data-card-height="200" style="height: 200px;">
+				<p class="text-center"> Scroller vers le bas pour plus d'information </p>
+				<div class="list-group list-custom-small">
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span class="font-13">UTILISATEUR</span>
+						<span class="badge bg-dark-dark font-12 color-white">Yannick NYA ROBOTO</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span class="font-13">CARTE</span>
+						<span class="badge bg-dark-dark font-12 color-white">AZERRTYUIOPQ</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span class="font-13">SOLDE</span>
+						<span class="badge bg-dark-dark font-12 color-white">1523 Frcfa</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span>PERMISSION UTILISATEUR</span>
+						<span class="badge bg-dark-dark color-white font-12">Aucun</span>
+					</a>
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span>STATUS CARTE</span>
+						<span class="badge bg-dark-dark color-white font-12">Active</span>
+					</a>   				
+					<a href="#">
+						<i class="fa fa-angle-right color-dark-dark"></i>
+						<span>SERVICES</span>
+						<span class="badge bg-dark-dark color-white font-12">paiement, controle</span>
+					</a>                    
+				</div>
+			</div>
+			<a href="#" class="btn btn-m rounded-s btn-center-xxl text-uppercase mt-4 font-500 bg-blue-dark color-white font-16">Fermer</a>
+		</div>
+	</div>
+    <!-- Page Content Ends Here-->
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/index.js"></script>
+<script type="text/javascript" src="scripts/debit.js"></script>
+</body>

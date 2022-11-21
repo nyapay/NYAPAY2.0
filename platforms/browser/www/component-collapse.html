@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Collapse / Dropdown</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-components" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+        
+        <div class="content">
+            <h4 class="bolder">Collapse Anything</h4>
+            <p>
+                With the new generation of collapse integrated in our products you can make absolutely any element on the page act like a collapse / dropdown menu.
+            </p>
+            <a data-toggle="collapse" href="#collapse-8" class="btn btn-sm btn-full bg-highlight font-800 text-uppercase shadow-xl font-13">Tap to Show more Content</a>
+            <div class="collapse" id="collapse-8">
+                <p class="mb-1 pt-3">
+                    Because your feedback is very important to us, and we always listen! Using collapse you can create any dropdown hidden element like this one
+                    and activate it with a simple tap! Great for a lot of elements.
+                </p>
+            </div>
+        </div>    
+        
+        <div class="divider divider-margins"></div>
+        
+        <div class="content mb-0">            
+            <h4>Collapse Lists</h4>
+            <p>
+                Great when you want to include a simple menu or multiple options in your page and don't want to overcomplicate the experience.
+            </p>
+            <div class="list-group list-custom-small list-icon-0">
+                <a data-toggle="collapse" href="#collapse-1">
+                    <i class="fa font-14 fa-share-alt color-red-dark"></i>
+                    <span class="font-14">Spaced</span>
+                    <i class="fa fa-angle-down"></i>
+                </a>        
+            </div>
+            <div class="collapse" id="collapse-1">
+                <div class="list-group list-custom-small ml-4 pl-2">
+                    <a href="#">
+                        <span class="font-400 opacity-70">Facebook</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#">
+                        <span class="font-400 opacity-70">Twitter</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#" class="border-0">
+                        <span class="font-400 opacity-70">Linkedin</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>                                
+
+            <div class="list-group list-custom-small list-icon-0">
+                <a data-toggle="collapse" href="#collapse-2">
+                    <i class="fa font-14 fa-envelope color-blue-dark"></i>
+                    <span class="font-14">Flushed</span>
+                    <i class="fa fa-angle-down"></i>
+                </a>        
+            </div>
+            <div class="collapse" id="collapse-2">
+                <div class="list-group list-custom-small">
+                    <a href="#">
+                        <span class="font-400 opacity-70">home@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#">
+                        <span class="font-400 opacity-70">business@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#" class="border-0">
+                        <span class="font-400 opacity-70">office@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>
+
+            <div class="list-group list-custom-small list-icon-0">
+                <a data-toggle="collapse" href="#collapse-3">
+                    <i class="fa font-14 fa-phone color-green-dark"></i>
+                    <span class="font-14">With Icons</span>
+                    <i class="fa fa-angle-down"></i>
+                </a>        
+            </div>
+            <div class="collapse" id="collapse-3">
+                <div class="list-group list-custom-small pl-3 ml-3">
+                    <a href="tel:+1234567890">
+                        <i class="fa font-13 fa-home color-green-dark"></i>
+                        <span class="font-400 opacity-70">Tap to Call Home</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="tel:+1234567890">
+                        <i class="fa font-13 fa-suitcase color-brown-light"></i>
+                        <span class="font-400 opacity-70">Tap to Call Business</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="tel:+1234567890">
+                        <i class="fa font-13 fa-building color-gray-dark"></i>
+                        <span class="font-400 opacity-70">Tap to Call Office</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>
+        </div>
+
+        <div class="divider divider-margins"></div>
+
+        <div class="content">
+            <h4 class="bolder">Colored Collapse</h4>
+            <p>
+                Simple link list that can get tapped to reveal more content. We used links in our example, you can use anything you want.
+            </p>
+        </div>    
+
+        <div class="divider divider-margins"></div>
+        
+        <div class="card mx-3 mb-3">
+            <div class="list-group list-custom-small list-icon-0 bg-green-dark pl-3 pr-4">
+                <a data-toggle="collapse" href="#collapse-5">
+                    <i class="fa font-14 fa-phone color-white"></i>
+                    <span class="font-14 color-white">Spaced</span>
+                    <i class="fa fa-angle-down color-white"></i>
+                </a>        
+            </div>
+            <div class="collapse pl-2 pr-4" id="collapse-5">
+                <div class="list-group list-custom-small pl-3">
+                    <a href="tel:+1234567890">
+                        <span class="font-400 opacity-70">Tap to Call Home</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="tel:+1234567890">
+                        <span class="font-400 opacity-70">Tap to Call Business</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="tel:+1234567890">
+                        <span class="font-400 opacity-70">Tap to Call Office</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mx-3 rounded-s mb-3">
+            <div class="list-group list-custom-small list-icon-0 bg-blue-dark pl-3 pr-4">
+                <a data-toggle="collapse" href="#collapse-7">
+                    <i class="fa font-14 fa-envelope color-white"></i>
+                    <span class="font-14 color-white">Flushed</span>
+                    <i class="fa fa-angle-down color-white"></i>
+                </a>        
+            </div>
+            <div class="collapse pl-2 pr-4" id="collapse-7">
+                <div class="list-group list-custom-small">
+                    <a href="#">
+                        <span class="font-400 opacity-70">home@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#">
+                        <span class="font-400 opacity-70">business@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#" class="border-0">
+                        <span class="font-400 opacity-70">office@domain.com</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mx-3 rounded-s mb-3">
+            <div class="list-group list-custom-small list-icon-0 bg-red-dark pl-3 pr-4">
+                <a data-toggle="collapse" href="#collapse-6">
+                    <i class="fa font-14 fa-share-alt color-white"></i>
+                    <span class="font-14 color-white">With Icons</span>
+                    <i class="fa fa-angle-down color-white"></i>
+                </a>        
+            </div>
+            <div class="collapse pl-2 pr-4" id="collapse-6">
+                <div class="list-group list-custom-small">
+                    <a href="#">
+                        <i class="fab font-13 fa-facebook-square color-facebook"></i>
+                        <span class="font-400 opacity-70">Facebook</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#">
+                        <i class="fab font-13 fa-twitter-square color-twitter"></i>
+                        <span class="font-400 opacity-70">Twitter</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                    <a href="#" class="border-0">
+                        <i class="fab font-13 fa-linkedin color-linkedin"></i>
+                        <span class="font-400 opacity-70">Linkedin</span>
+                        <i class="fa fa-angle-right"></i>
+                    </a>        
+                </div>
+            </div>
+        </div>        
+        
+        <div class="divider divider-margins mt-4"></div>
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page Content Ends Here-->
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

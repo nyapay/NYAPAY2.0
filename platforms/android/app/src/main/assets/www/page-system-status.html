@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">System Status</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-pages" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+        
+        <div class="bg-green-dark text-uppercase py-3 text-center font-700"> Everything's okay!</div>
+        
+        <div class="content">
+            <h1>System Status</h1>
+            <p>
+                If you notice anything unusual or not up to date, please get in touch with us via our email at <a href="#">mail@domain.com</a>
+            </p>
+            <div class="list-group list-custom-small mt-n2">
+                <a href="#">
+                    <i class="fa fa-upload color-green-dark"></i>
+                    <span>System FTP</span>
+                    <span class="text-uppercase font-700 badge bg-green-dark uppercase">Operational</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-box color-green-dark"></i>
+                    <span>Storage Server</span>
+                    <span class="text-uppercase font-700 badge bg-green-dark uppercase">Operational</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-globe color-yellow-dark"></i>
+                    <span>API Gateway</span>
+                    <span class="text-uppercase font-700 badge bg-yellow-dark uppercase">Pending</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-search color-yellow-dark"></i>
+                    <span>Search System</span>
+                    <span class="text-uppercase font-700 badge bg-yellow-dark uppercase">Pending</span>
+                </a>
+                <a href="#">
+                    <i class="fa fa-chart-line color-blue-dark"></i>
+                    <span>Global Database</span>
+                    <span class="text-uppercase font-700 badge bg-blue-dark uppercase">Maintenannce</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <a href="#" class="no-border">
+                    <i class="fa fa-cog color-blue-dark"></i>
+                    <span>Mobile Application</span>
+                    <span class="text-uppercase font-700 badge bg-red-dark uppercase">OFFLINE</span>
+                </a>
+            </div>        
+            
+            <h3 class="mt-4">Database Upgrade</h3>
+            <p class="mt-n1 color-highlight mb-0">Shceduled Event Under Way</p>
+            <p>
+                Currently upgrading our database, this is a much needed task that will increase the performance of our pages. Please stand by. It'll be done shortly.
+            </p>
+            
+            <div class="divider"></div>
+            
+            <h3 class="mt-4">Email Servers</h3>
+            <p class="mt-n1 color-red-dark mb-0">Error Found. Currently Repairing</p>
+            <p>
+                We've identified an issue wiht our customer database and put it offlie until we can guarantee all systems are running correctly
+            </p>
+            <div class="divider"></div>
+            
+            <a href="#" class="btn btn-full btn-m text-uppercase font-800 bg-highlight">Contact Support</a>
+            
+        </div>
+
+        <div data-menu-load="menu-footer.html"></div>
+    
+    </div>
+    <!-- Page content ends here-->
+     
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Appeca Mobile</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome-all.min.css">    
+<link rel="manifest" href="_manifest.json" data-pwa-version="set_in_manifest_and_pwa_js">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png">
+</head>
+    
+<body class="theme-light">
+    
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+    
+<div id="page">
+    
+    <div class="header header-fixed header-dark header-logo-app">
+        <a href="index.html" class="header-title header-subtitle">Gallery Filter Select</a>
+        <a href="#" data-back-button         class="header-icon header-icon-1"><i class="fa fa-arrow-left"></i></a>
+        <a href="#" data-menu="menu-main"    class="header-icon header-icon-2"><i class="fa fa-bars"></i></a>
+        <a href="#" data-toggle-theme        class="header-icon header-icon-3"><i class="far fa-lightbulb"></i></a>
+    </div>
+    
+    <div id="menu-main" class="menu menu-box-left" data-menu-load="menu-main.html" data-menu-width="280" data-menu-active="nav-media" data-menu-effect="menu-parallax"></div>
+    
+    <div class="page-content header-clear">
+        
+        <div class="divider divider-margins"></div>
+
+        <div class="content"> 
+            <!-- set your categories here, using the value as the data-filter-->
+            <div class="input-style input-style-2 mb-0">
+                <span class="input-style-1-active">Viewing</span>
+                <em><i class="fa fa-angle-down"></i></em>
+                <select id="filter-select" class="form-control">
+                    <option value="all" selected>All Categories</option>
+                    <option value="5">Activities</option>
+                    <option value="6">Recreational</option>
+                    <option value="7">Technology</option>
+                </select>
+            </div>
+
+            <!-- these are the actual controls. copy your aboce selects here, be sure value and data-filter are the same-->
+
+            <ul class="gallery-filter-controls-hidden">
+                <li data-filter="all">asd</li>
+                <li data-filter="5"></li>
+                <li data-filter="6"></li>
+                <li data-filter="7"></li>
+            </ul>
+
+        </div>
+        <div class="content mt-0 mb-3">
+            <div class="gallery gallery-filter-select">
+                <a href="images/pictures/20t.jpg" data-lightbox="gallery-1" class="filtr-item" title="Cream Pie" data-category="5">
+                    <img src="images/empty.png" data-src="images/pictures/20s.jpg" class="preload-img shadow-m" alt="Athlete">
+                </a>
+                <a href="images/pictures/21t.jpg" data-lightbox="gallery-1" class="filtr-item" title="Pots and Recipes" data-category="7">
+                    <img src="images/empty.png" data-src="images/pictures/21t.jpg" class="preload-img shadow-m" alt="Mobile Phone">
+                </a>
+                <a href="images/pictures/22t.jpg" data-lightbox="gallery-1" class="filtr-item" title="Pots and Recipes" data-category="6">
+                    <img src="images/empty.png" data-src="images/pictures/22s.jpg" class="preload-img shadow-m" alt="Guitar">
+                </a>							
+                <a href="images/pictures/23t.jpg" data-lightbox="gallery-2" class="filtr-item" title="Typeweritter and Vynil" data-category="5">
+                    <img src="images/empty.png" data-src="images/pictures/23s.jpg" class="preload-img shadow-m" alt="Break Dance">
+                </a>
+                <a href="images/pictures/24t.jpg" data-lightbox="gallery-2" class="filtr-item" title="Beautiful Camera" data-category="7">
+                    <img src="images/empty.png" data-src="images/pictures/24t.jpg" class="preload-img shadow-m" alt="Headsets">
+                </a>
+                <a href="images/pictures/25t.jpg" data-lightbox="gallery-3" class="filtr-item" title="Cookies and Flowers" data-category="6">
+                    <img src="images/empty.png" data-src="images/pictures/25s.jpg" class="preload-img shadow-m" alt="Karaoke">
+                </a>
+                <a href="images/pictures/26t.jpg" data-lightbox="gallery-3" class="filtr-item" title="Autumn Leaves" data-category="5">
+                    <img src="images/empty.png" data-src="images/pictures/26s.jpg" class="preload-img shadow-m" alt="Dancing">
+                </a>
+                <a href="images/pictures/27t.jpg" data-lightbox="gallery-2" class="filtr-item" title="Beautiful Camera" data-category="6">
+                    <img src="images/empty.png" data-src="images/pictures/27s.jpg" class="preload-img shadow-m" alt="Saxophone">
+                </a>
+                <a href="images/pictures/28t.jpg" data-lightbox="gallery-3" class="filtr-item" title="Cookies and Flowers" data-category="7">
+                    <img src="images/empty.png" data-src="images/pictures/28t.jpg" class="preload-img shadow-m" alt="Desk Tech">
+                </a>		
+            </div>
+        </div>
+        
+        <div data-menu-load="menu-footer.html"></div>
+    </div>
+    <!-- Page content ends here-->     
+    
+</div>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+</body>

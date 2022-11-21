@@ -1,0 +1,46 @@
+<div class="content">
+    <h2 class="text-center">Let's Get in Touch</h2>
+    <p class="boxed-text-xl">
+        Get in touch with us. Send us a message and we'll
+        get back to you in the shortest possible time!
+    </p>
+    <div class="formValidationError bg-red-dark shadow-xl" id="contactNameFieldError">
+        <p class="text-center text-uppercase p-2 color-white font-900 ">Name is required!</p>
+    </div>
+    <div class="formValidationError bg-red-dark shadow-xl" id="contactEmailFieldError">
+        <p class="text-center text-uppercase p-2 color-white font-900">Mail address required!</p>
+    </div>
+    <div class="formValidationError bg-red-dark shadow-xl" id="contactEmailFieldError2">
+        <p class="text-center text-uppercase p-2 color-white font-900">Mail address must be valid!</p>
+    </div>
+    <div class="formValidationError bg-red-dark shadow-xl" id="contactMessageTextareaError">
+        <p class="text-center text-uppercase p-2 color-white font-900">Message field is empty!</p>
+    </div>
+
+    <div class="formSuccessMessageWrap">
+        <div class="shadow-l rounded-m bg-green-dark mb-n1 ">
+            <h1 class="color-white text-center pt-4"><i class="fa fa-check-circle fa-3x shadow-s scale-box rounded-circle"></i></h1>
+            <h2 class="color-white bold text-center pt-3">Message Sent</h2>
+            <p class="color-white pb-4 text-center mt-n2 mb-0">We'll get back to you shortly.</p>
+        </div>
+    </div>
+    <form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+        <fieldset>
+            <div class="form-field form-name">
+                <label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+                <input type="text" name="contactNameField" value="" class="contactField rounded-0 requiredField" id="contactNameField" />
+            </div>
+            <div class="form-field form-email">
+                <label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+                <input type="text" name="contactEmailField" value="" class="contactField rounded-0 requiredField requiredEmailField" id="contactEmailField" />
+            </div>
+            <div class="form-field form-text">
+                <label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+                <textarea name="contactMessageTextarea" class="contactTextarea rounded-0 requiredField" id="contactMessageTextarea"></textarea>
+            </div>
+            <div class="form-button">
+                <input type="submit" class="btn bg-highlight text-uppercase font-900 btn-m btn-full rounded-s mt-n3 mb-5  shadow-xl contactSubmitButton" value="Send Message" data-formId="contactForm" />
+            </div>
+        </fieldset>
+    </form>			
+</div>
